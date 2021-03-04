@@ -23,7 +23,9 @@
 module FitBit(
     input CLK, rst, start,
     input [1:0] MD,
-    output si);
+    output si, 
+    output reg [2:0]delayFlag = 0,
+    output reg [21:0]delay = 0);
     
 wire pulse; 
 PulseGenerator generator(CLK, start, MD[1:0], pulse);
@@ -34,16 +36,17 @@ reg [15:0]disp; //display register
 sevenseg display(CLK, disp[15:0], rst, si, an[3:0], seg[6:0]);
 
 //delay loops for 2s
-reg [21:0]delay = 0;
-reg [2:0]delayFlag = 0;
+//reg [21:0]delay = 0;
+//reg [2:0]delayFlag = 0;
 reg changeDisp = 0;
 always @(posedge CLK) 
 begin
-    if(delay < 2000000000-1) begin
+    if(delay < 100-1) begin
+    //2000000000-1
         delay <= delay+1;
         changeDisp <= 0;
     end
-    else begin //delay <= 1mil
+    else begin //delay <= 2mil
         delay <= 0;
         changeDisp <= 1;
         if(delayFlag < 3)
@@ -59,16 +62,21 @@ end
 //High activity time, Total step count, Distance covered...and so on
 
 reg [15:0] count = 0; //total steps  
-reg [15:0] fixedM = 0; //fixed point rep of distance covered
+reg [15:0] fixedM = 1; //fixed point rep of distance covered
+reg [15:0] ov32 = 2;
+reg [15:0] hiActiv = 3;
 always @(posedge changeDisp)
 begin
     if(delayFlag == 0)
-        disp = count; 
+        disp <= count; 
     else if(delayFlag == 1)
-        disp = fixedM; 
+        disp <= fixedM; 
     else if(delayFlag == 2)
+        disp <= ov32; 
     else if(delayFlag == 3)
+        disp <= hiActiv;
     else //should not happen
+        disp <= disp; 
 end
 
 
