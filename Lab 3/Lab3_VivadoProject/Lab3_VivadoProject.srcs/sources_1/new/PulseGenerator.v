@@ -3,6 +3,7 @@
 
 module PulseGenerator(
     input clk,
+    input start,
     input [1:0] mode,
     output pulse
     );
@@ -24,7 +25,7 @@ module PulseGenerator(
     reg outputPulse;
     assign pulse = outputPulse;
     
-    always @(mode) begin
+    always @(start) begin
         ticks = 0;
         outputPulse = 0;
         lastSeconds = -1;
@@ -53,6 +54,8 @@ module PulseGenerator(
            else if(mode == 2'b01) frequency = 64;
            else frequency = 128;
        end
+       
+       if(!start) frequency = 0;
        
         period = (1000000000 / `clkDiv) / ((frequency*4)+1);
        
