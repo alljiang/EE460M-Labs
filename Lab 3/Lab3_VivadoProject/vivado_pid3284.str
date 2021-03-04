@@ -1,0 +1,290 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 3284
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Mar 03 20:23:15 CST 2021
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	xchen
+User home directory: C:/Users/xchen
+User working directory: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/xchen/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/xchen/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/xchen/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/vivado.log
+Vivado journal file location: 	C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/vivado.jou
+Engine tmp dir: 	C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/.Xil/Vivado-3284-DESKTOP-TL47JD6
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	131 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,029 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\xchen\Documents\EE460M HDL Digital Sys\EE460M-Labs\Lab 3\Lab3_VivadoProject\Lab3_VivadoProject.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 103 MB (+105801kb) [00:00:16]
+// [Engine Memory]: 1,029 MB (+927668kb) [00:00:16]
+// [GUI Memory]: 122 MB (+13960kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  5483 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,029 MB. GUI used memory: 59 MB. Current time: 3/3/21, 8:23:21 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 1018.074 ; gain = 0.000 
+// Project name: Lab3_VivadoProject; location: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (FitBit.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("FitBit.v", 1, 225); // bP
+selectCodeEditor("FitBit.v", 1, 219); // bP
+selectCodeEditor("FitBit.v", 56, 222); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("FitBit.v", 799, 168); // bP
+selectCodeEditor("FitBit.v", 470, 251); // bP
+typeControlKey((HResource) null, "FitBit.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 739ms to process. Increasing delay to 3000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 131 MB (+3497kb) [00:01:54]
+// Elapsed time: 56 seconds
+selectCodeEditor("FitBit.v", 777, 66); // bP
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), display : xil_defaultlib.Sevenseg]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), display : xil_defaultlib.Sevenseg]", 3, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), sevenseg (sevenseg.v)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), display : xil_defaultlib.Sevenseg]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), display : xil_defaultlib.Sevenseg]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), display : xil_defaultlib.Sevenseg]", 3, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), sevenseg (sevenseg.v)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), display : xil_defaultlib.Sevenseg]", 3, false); // D
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), display : xil_defaultlib.Sevenseg]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), display : xil_defaultlib.Sevenseg]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), display : xil_defaultlib.Sevenseg]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), display : xil_defaultlib.Sevenseg]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), display : xil_defaultlib.Sevenseg]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), sevenseg (sevenseg.v)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FitBit (FitBit.v), sevenseg (sevenseg.v), clkdiv (clkdiv.v)]", 6, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FitBit.v", 1); // m
+selectCodeEditor("FitBit.v", 186, 227); // bP
+selectCodeEditor("FitBit.v", 9, 219); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 138 MB (+680kb) [00:03:27]
+selectCodeEditor("FitBit.v", 203, 194); // bP
+selectCodeEditor("FitBit.v", 250, 171); // bP
+selectCodeEditor("FitBit.v", 210, 199); // bP
+selectCodeEditor("FitBit.v", 629, 230); // bP
+selectCodeEditor("FitBit.v", 146, 228); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sevenseg.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FitBit.v", 1); // m
+selectCodeEditor("FitBit.v", 166, 203); // bP
+selectCodeEditor("FitBit.v", 597, 93); // bP
+selectCodeEditor("FitBit.v", 182, 135); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("FitBit.v", 165, 218); // bP
+selectCodeEditor("FitBit.v", 298, 234); // bP
+selectCodeEditor("FitBit.v", 275, 291); // bP
+selectCodeEditor("FitBit.v", 272, 150); // bP
+selectCodeEditor("FitBit.v", 231, 137); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 55 seconds
+selectCodeEditor("FitBit.v", 84, 280); // bP
+selectCodeEditor("FitBit.v", 232, 178); // bP
+selectCodeEditor("FitBit.v", 96, 281); // bP
+// Elapsed time: 72 seconds
+selectCodeEditor("FitBit.v", 249, 181); // bP
+selectCodeEditor("FitBit.v", 246, 181); // bP
+selectCodeEditor("FitBit.v", 63, 307); // bP
+selectCodeEditor("FitBit.v", 145, 353); // bP
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 294ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sevenseg.v", 2); // m
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FitBit.v", 1); // m
+selectCodeEditor("FitBit.v", 118, 338); // bP
+selectCodeEditor("FitBit.v", 126, 340); // bP
+selectCodeEditor("FitBit.v", 164, 283); // bP
+selectCodeEditor("FitBit.v", 83, 330); // bP
+// Elapsed time: 36 seconds
+selectCodeEditor("FitBit.v", 106, 346); // bP
+selectCodeEditor("FitBit.v", 259, 346); // bP
+selectCodeEditor("FitBit.v", 142, 350); // bP
+selectCodeEditor("FitBit.v", 268, 352); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("FitBit.v", 106, 342); // bP
+// Elapsed time: 88 seconds
+selectCodeEditor("FitBit.v", 338, 268); // bP
+selectCodeEditor("FitBit.v", 168, 181); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("FitBit.v", 137, 207); // bP
+// Elapsed time: 48 seconds
+selectCodeEditor("FitBit.v", 41, 74); // bP
+selectCodeEditor("FitBit.v", 183, 62); // bP
+selectCodeEditor("FitBit.v", 45, 79); // bP
+// Elapsed time: 39 seconds
+selectCodeEditor("FitBit.v", 269, 179); // bP
+selectCodeEditor("FitBit.v", 329, 191); // bP
+selectCodeEditor("FitBit.v", 342, 243); // bP
+selectCodeEditor("FitBit.v", 296, 184); // bP
+selectCodeEditor("FitBit.v", 241, 134); // bP
+selectCodeEditor("FitBit.v", 213, 243); // bP
+selectCodeEditor("FitBit.v", 364, 270); // bP
+selectCodeEditor("FitBit.v", 300, 305); // bP
+// Elapsed time: 61 seconds
+selectCodeEditor("FitBit.v", 266, 283); // bP
+selectCodeEditor("FitBit.v", 194, 198); // bP
+selectCodeEditor("FitBit.v", 167, 241); // bP
+selectCodeEditor("FitBit.v", 168, 289); // bP
+selectCodeEditor("FitBit.v", 167, 326); // bP
+selectCodeEditor("FitBit.v", 258, 321); // bP
+selectCodeEditor("FitBit.v", 273, 295); // bP
+selectCodeEditor("FitBit.v", 202, 77); // bP
+selectCodeEditor("FitBit.v", 42, 83); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("FitBit.v", 257, 44); // bP
+selectCodeEditor("FitBit.v", 210, 89); // bP
+selectCodeEditor("FitBit.v", 210, 83); // bP
+selectCodeEditor("FitBit.v", 236, 109); // bP
+selectCodeEditor("FitBit.v", 247, 174); // bP
+selectCodeEditor("FitBit.v", 313, 203); // bP
+selectCodeEditor("FitBit.v", 80, 197); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sevenseg.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FitBit.v", 1); // m
+selectCodeEditor("FitBit.v", 142, 94); // bP
+selectCodeEditor("FitBit.v", 142, 138); // bP
+selectCodeEditor("FitBit.v", 365, 208); // bP
+selectCodeEditor("FitBit.v", 379, 98); // bP
+selectCodeEditor("FitBit.v", 313, 151); // bP
+selectCodeEditor("FitBit.v", 267, 285); // bP
+selectCodeEditor("FitBit.v", 210, 258); // bP
+selectCodeEditor("FitBit.v", 180, 259); // bP
+selectCodeEditor("FitBit.v", 212, 33); // bP
+selectCodeEditor("FitBit.v", 212, 52); // bP
+selectCodeEditor("FitBit.v", 231, 78); // bP
+selectCodeEditor("FitBit.v", 244, 64); // bP
+selectCodeEditor("FitBit.v", 251, 34); // bP
+selectCodeEditor("FitBit.v", 242, 51); // bP
+selectCodeEditor("FitBit.v", 223, 81); // bP
+selectCodeEditor("FitBit.v", 246, 69); // bP
+selectCodeEditor("FitBit.v", 255, 58); // bP
+selectCodeEditor("FitBit.v", 244, 82); // bP
+selectCodeEditor("FitBit.v", 232, 99); // bP
+selectCodeEditor("FitBit.v", 246, 76); // bP
+selectCodeEditor("FitBit.v", 257, 59); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("FitBit.v", 342, 113); // bP
+selectCodeEditor("FitBit.v", 360, 156); // bP
+selectCodeEditor("FitBit.v", 132, 300); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("FitBit.v", 256, 267); // bP
+selectCodeEditor("FitBit.v", 225, 285); // bP
+selectCodeEditor("FitBit.v", 214, 298); // bP
+selectCodeEditor("FitBit.v", 186, 298); // bP
+selectCodeEditor("FitBit.v", 228, 172); // bP
+// Elapsed time: 32 seconds
+selectCodeEditor("FitBit.v", 218, 310); // bP
+selectCodeEditor("FitBit.v", 185, 111); // bP
+// Elapsed time: 90 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sevenseg.v", 2); // m
+// Elapsed time: 11 seconds
+selectCodeEditor("sevenseg.v", 213, 134); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FitBit.v", 1); // m
+selectCodeEditor("FitBit.v", 57, 325); // bP
+typeControlKey((HResource) null, "FitBit.v", 'c'); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("FitBit.v", 251, 222); // bP

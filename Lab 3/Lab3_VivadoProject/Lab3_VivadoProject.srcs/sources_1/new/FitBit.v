@@ -30,10 +30,9 @@ PulseGenerator generator(CLK, start, MD[1:0], pulse);
 
 wire [3:0]an;
 wire [6:0]seg;
-Sevenseg display(CLK, count[15:0], rst, si, an[3:0], seg[6:0]);
+sevenseg display(CLK, count[15:0], rst, si, an[3:0], seg[6:0]);
 
-
-reg [15:0] count; 
+reg [15:0] count = 0; 
 always @(posedge pulse)
 begin
     if(count < 9999)
@@ -42,6 +41,21 @@ begin
         count <= 0;
     else //should not happen
         count <= 0;
+end
+
+reg [7:0] fixedM = 0;
+always @(count)
+begin
+    if(count < 2048)
+        fixedM <= 0;
+    else if(2048 <= count < 4096)
+        fixedM <= 5;
+    else if(4096 <= count < 6144)
+        fixedM <= 10;
+    else if(6144 <= count < 8192)
+        fixedM <= 15;
+    else //if count >= 8192
+        fixedM <= 20; 
 end
 
 endmodule
