@@ -26,17 +26,11 @@ module FitBit(
     output si);
     
 wire pulse; 
-PulseGenerator(
-CLK,
- start,
- [1:0]MD,
- pulse
-);
+PulseGenerator generator(CLK, start, MD[1:0], pulse);
 
 wire [3:0]an;
 wire [6:0]seg;
-module sevenseg(
-CLK, [15:0]count, rst, si, [3:0]an, [6:0]seg);
+Sevenseg display(CLK, count[15:0], rst, si, an[3:0], seg[6:0]);
 
 
 reg [15:0] count; 
@@ -44,7 +38,7 @@ always @(posedge pulse)
 begin
     if(count < 9999)
         count <= count+1;
-    else if(count = 9999)
+    else if(count == 9999)
         count <= 0;
     else //should not happen
         count <= 0;
