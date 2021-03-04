@@ -30,9 +30,49 @@ PulseGenerator generator(CLK, start, MD[1:0], pulse);
 
 wire [3:0]an;
 wire [6:0]seg;
-sevenseg display(CLK, count[15:0], rst, si, an[3:0], seg[6:0]);
+reg [15:0]disp; //display register 
+sevenseg display(CLK, disp[15:0], rst, si, an[3:0], seg[6:0]);
 
-reg [15:0] count = 0; 
+//delay loops for 2s
+reg [21:0]delay = 0;
+reg [2:0]delayFlag = 0;
+reg changeDisp = 0;
+always @(posedge CLK) 
+begin
+    if(delay < 2000000000-1) begin
+        delay <= delay+1;
+        changeDisp <= 0;
+    end
+    else begin //delay <= 1mil
+        delay <= 0;
+        changeDisp <= 1;
+        if(delayFlag < 4)
+            delayFlag <= delayFlag+1;
+        else //delayFlag >= 4
+            delayFlag <=0;
+    end
+end
+
+//delay handler 
+//period of 2s each
+//Total step count, Distance covered, Steps over 32(time)
+//High activity time, Total step count, Distance covered...and so on
+
+reg [15:0] count = 0; //total steps  
+reg [15:0] fixedM = 0; //fixed point rep of distance covered
+always @(posedge changeDisp)
+begin
+    if(delayFlag == 1)
+        disp = count; 
+    else if(delayFlag == 2)
+        disp = fixedM; 
+    else if(delayFlag == 3)
+    else if(delayFlag == 4)
+    else //should not happen
+end
+
+
+
 always @(posedge pulse)
 begin
     if(count < 9999)
@@ -43,7 +83,6 @@ begin
         count <= 0;
 end
 
-reg [7:0] fixedM = 0;
 always @(count)
 begin
     if(count < 2048)
@@ -57,5 +96,6 @@ begin
     else //if count >= 8192
         fixedM <= 20; 
 end
+
 
 endmodule
