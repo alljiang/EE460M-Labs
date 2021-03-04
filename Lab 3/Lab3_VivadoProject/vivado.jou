@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar  3 19:49:11 2021
+# Process ID: 4288
+# Current directory: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4292 C:\Users\xchen\Documents\EE460M HDL Digital Sys\EE460M-Labs\Lab 3\Lab3_VivadoProject\Lab3_VivadoProject.xpr
+# Log file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/vivado.log
+# Journal file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/FitBit.v} w ]
+add_files {{C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/FitBit.v}}
+update_compile_order -fileset sources_1
