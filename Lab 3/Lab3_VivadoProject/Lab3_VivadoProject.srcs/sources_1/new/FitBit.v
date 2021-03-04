@@ -46,9 +46,9 @@ begin
     else begin //delay <= 1mil
         delay <= 0;
         changeDisp <= 1;
-        if(delayFlag < 4)
+        if(delayFlag < 3)
             delayFlag <= delayFlag+1;
-        else //delayFlag >= 4
+        else //delayFlag >= 3
             delayFlag <=0;
     end
 end
@@ -62,12 +62,12 @@ reg [15:0] count = 0; //total steps
 reg [15:0] fixedM = 0; //fixed point rep of distance covered
 always @(posedge changeDisp)
 begin
-    if(delayFlag == 1)
+    if(delayFlag == 0)
         disp = count; 
-    else if(delayFlag == 2)
+    else if(delayFlag == 1)
         disp = fixedM; 
+    else if(delayFlag == 2)
     else if(delayFlag == 3)
-    else if(delayFlag == 4)
     else //should not happen
 end
 
