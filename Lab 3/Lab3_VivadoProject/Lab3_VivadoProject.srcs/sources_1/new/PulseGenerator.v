@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`define clkDiv 1000
 
 module PulseGenerator(
     input clk,
@@ -13,23 +14,25 @@ module PulseGenerator(
     11: Hybrid
     */
     
-    time nanos;
+    time ticks;
     integer seconds;
     integer period;
     integer lastSeconds;
     integer frequency;
+    integer pulseCount;
     
     reg outputPulse;
     assign pulse = outputPulse;
     
     always @(mode) begin
-        nanos = 0;
+        ticks = 0;
         outputPulse = 0;
         lastSeconds = -1;
+        pulseCount = 0;
     end
     
     always @(posedge clk) begin
-       seconds = nanos / 1000000000;
+       seconds = ticks / (500000000 / `clkDiv);
        if(mode == 2'b11) begin
            if(seconds < 1) frequency = 20;
            else if(seconds < 2) frequency = 33;
@@ -51,16 +54,20 @@ module PulseGenerator(
            else frequency = 128;
        end
        
-        period = 1000000000/((frequency*4)+1);
+        period = (1000000000 / `clkDiv) / ((frequency*4)+1);
        
        if(lastSeconds != seconds) begin
            //   first pulse of the second, let's force it to low
            outputPulse = 0;
+           pulseCount = 0;
            lastSeconds = seconds;
        end
-       else if(nanos % period == 0) outputPulse = !outputPulse;
+       else if(ticks % period == 0) begin
+           if(pulseCount < frequency || outputPulse) outputPulse = !outputPulse;
+           if(outputPulse) pulseCount = pulseCount + 1;
+       end
        
-       nanos = nanos + 1;
+       ticks = ticks + 1;
     end
     
     

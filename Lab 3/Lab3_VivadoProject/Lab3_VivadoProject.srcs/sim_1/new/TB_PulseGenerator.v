@@ -6,7 +6,7 @@ module TB_PulseGenerator();
     reg[1:0] mode;
     wire pulse;
  
-    always #1 clk = ~clk;
+    always #1000 clk = ~clk;
     
     PulseGenerator gen(clk, mode, pulse);
     
