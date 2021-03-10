@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar  3 20:22:56 2021
+# Process ID: 3284
+# Current directory: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4736 C:\Users\xchen\Documents\EE460M HDL Digital Sys\EE460M-Labs\Lab 3\Lab3_VivadoProject\Lab3_VivadoProject.xpr
+# Log file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/vivado.log
+# Journal file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sim_1/new/2sDelayModeChange.v} w ]
+add_files -fileset sim_1 {{C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sim_1/new/2sDelayModeChange.v}}
+update_compile_order -fileset sim_1
+launch_simulation
+source TB_PulseGenerator.tcl
+run 10000000000000000ns
+run 10s
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DelayModeChange [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation
+source DelayModeChange.tcl
+close_sim
+launch_simulation
+source DelayModeChange.tcl
+close_sim
+launch_simulation
+source DelayModeChange.tcl
+close_sim
+launch_simulation
+source DelayModeChange.tcl
+run 10s
+close_sim
+launch_simulation
+source DelayModeChange.tcl
+close_sim
+launch_simulation
+source DelayModeChange.tcl
+close_sim
+launch_simulation
+source DelayModeChange.tcl
+close_sim
+close_project
+open_project {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.xpr}
+update_compile_order -fileset sources_1

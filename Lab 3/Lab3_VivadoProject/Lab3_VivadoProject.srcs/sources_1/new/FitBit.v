@@ -46,7 +46,7 @@ begin
         delay <= delay+1;
         changeDisp <= 0;
     end
-    else begin //delay <= 2mil
+    else begin //delay > 2mil
         delay <= 0;
         changeDisp <= 1;
         if(delayFlag < 3)
