@@ -22,7 +22,7 @@
 module over32(
     input CLK,
     input rst, 
-    input count, 
+    input [15:0] count, 
     output reg [3:0]numOv32 = 0);
 
 //save previous value as reference
