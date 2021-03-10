@@ -23,13 +23,17 @@
 module FitBit(
     input CLK, rst, start,
     input [1:0] MD,
-    output si);
-    
+    output si,
+    output [3:0]an,
+    output [6:0]seg,
+    output dp);
+
+reg decimal = 1;
+assign dp =  decimal;    
+
 wire pulse; 
 PulseGenerator generator(CLK, start, MD[1:0], pulse);
 
-wire [3:0]an;
-wire [6:0]seg;
 reg [15:0]disp; //display register 
 sevenseg display(CLK, disp[15:0], rst, si, an[3:0], seg[6:0]);
 
@@ -95,14 +99,22 @@ end
 reg [15:0] hiActiv = 3;
 always @(posedge changeDisp)
 begin
-    if(delayFlag == 0)
+    if(delayFlag == 0)begin
         disp <= count; 
-    else if(delayFlag == 1)
+        decimal <= 1;
+    end
+    else if(delayFlag == 1)begin
         disp <= fixedM; 
-    else if(delayFlag == 2)
+        decimal <= 0;
+    end
+    else if(delayFlag == 2)begin
         disp <= secondsFastPace; //output of speedWalkTime
-    else if(delayFlag == 3)
+        decimal <= 1;
+    end
+    else if(delayFlag == 3)begin
         disp <= hiActiv;
+        decimal <= 1;
+    end
     else //should not happen
         disp <= disp; 
 end
