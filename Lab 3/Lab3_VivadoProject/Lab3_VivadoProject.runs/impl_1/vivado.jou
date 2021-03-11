@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 10 21:27:21 2021
+# Process ID: 9312
+# Current directory: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/impl_1
+# Command line: vivado.exe -log sevenseg.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sevenseg.tcl -notrace
+# Log file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/impl_1/sevenseg.vdi
+# Journal file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sevenseg.tcl -notrace

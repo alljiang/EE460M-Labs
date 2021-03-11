@@ -18,8 +18,6 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-
 module FitBit(
     input CLK, rst, start,
     input [1:0] MD,
@@ -34,13 +32,16 @@ assign dp =  decimal;
 wire pulse; 
 PulseGenerator generator(CLK, start, MD[1:0], pulse);
 
-reg [15:0]disp; //display register 
+reg [15:0]disp = 0; //display register 
 sevenseg display(CLK, disp[15:0], rst, si, an[3:0], seg[6:0]);
 
-wire [15:0]secondsFastPace;
+wire [15:0]secondsFastPace = 0;
 SpeedwalkTime over32(
 CLK, rst, pulse, secondsFastPace
 );
+
+reg [15:0] hiActiv = 0;
+module HighActivity(CLK, rst, pulse, hiActiv);
 
 //step count generator
 reg [15:0] count = 0; //total steps  
@@ -96,7 +97,6 @@ end
 //period of 2s each
 //Total step count, Distance covered, Steps over 32(time)
 //High activity time, Total step count, Distance covered...and so on
-reg [15:0] hiActiv = 3;
 always @(posedge changeDisp)
 begin
     if(delayFlag == 0)begin
@@ -115,8 +115,10 @@ begin
         disp <= hiActiv;
         decimal <= 1;
     end
-    else //should not happen
+    else begin//should not happen
         disp <= disp; 
+    end
 end
+
 
 endmodule

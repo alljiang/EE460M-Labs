@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1615433233">
+  <File Type="BITSTR-BMM" Name="sevenseg_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="sevenseg_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="sevenseg_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="sevenseg_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="sevenseg.tcl"/>
+  <File Type="OPT-TIMING" Name="sevenseg_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="sevenseg_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="sevenseg_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="sevenseg_reports.tcl"/>
+  <File Type="OPT-DRC" Name="sevenseg_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="sevenseg.hwdef"/>
+  <File Type="PWROPT-DCP" Name="sevenseg_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="sevenseg_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="sevenseg_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="sevenseg_placed.dcp"/>
+  <File Type="PLACE-IO" Name="sevenseg_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="sevenseg_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="sevenseg_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="sevenseg_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="sevenseg_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="sevenseg_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="sevenseg_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="sevenseg_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="sevenseg_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="sevenseg.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="sevenseg_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="sevenseg_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="sevenseg_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="sevenseg.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="sevenseg_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="sevenseg_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="sevenseg_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="sevenseg_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="sevenseg_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="sevenseg_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="sevenseg_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="sevenseg.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="sevenseg_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sevenseg_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sevenseg_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="sevenseg_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="sevenseg_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="sevenseg_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="sevenseg_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="sevenseg_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="sevenseg_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="sevenseg_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="sevenseg_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="sevenseg_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="sevenseg_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="sevenseg_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="sevenseg_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sevenseg_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="sevenseg_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="sevenseg_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="sevenseg_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="sevenseg_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="sevenseg_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="sevenseg.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="sevenseg_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="sevenseg.rbt"/>
+  <File Type="BITSTR-NKY" Name="sevenseg.nky"/>
+  <File Type="PDI-FILE" Name="sevenseg.pdi"/>
+  <File Type="RCFI_FILE" Name="sevenseg.rcfi"/>
+  <File Type="CFI_FILE" Name="sevenseg.cfi"/>
+  <File Type="RNPI_FILE" Name="sevenseg.rnpi"/>
+  <File Type="NPI_FILE" Name="sevenseg.npi"/>
+  <File Type="RBD_FILE" Name="sevenseg.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="sevenseg.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="sevenseg.sysdef"/>
+  <File Type="BG-BGN" Name="sevenseg.bgn"/>
+  <File Type="BG-DRC" Name="sevenseg.drc"/>
+  <File Type="RDI-RDI" Name="sevenseg.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/bcd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/bcd.v"/>
+        <Attr Name="ImportTime" Val="1606164492"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/clkdiv.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/clkdiv.v"/>
+        <Attr Name="ImportTime" Val="1606167052"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/sevenseg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/sevenseg.v"/>
+        <Attr Name="ImportTime" Val="1606162730"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FitBit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HighActivity.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PulseGenerator.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SpeedwalkTime.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/over32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="sevenseg"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
