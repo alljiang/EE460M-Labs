@@ -23,21 +23,40 @@
 module FitBit(
     input CLK, rst, start,
     input [1:0] MD,
-    output si, 
-    output reg [2:0]delayFlag = 0,
-    output reg [21:0]delay = 0);
-    
+    output si,
+    output [3:0]an,
+    output [6:0]seg,
+    output dp);
+
+reg decimal = 1;
+assign dp =  decimal;    
+
 wire pulse; 
 PulseGenerator generator(CLK, start, MD[1:0], pulse);
 
-wire [3:0]an;
-wire [6:0]seg;
 reg [15:0]disp; //display register 
 sevenseg display(CLK, disp[15:0], rst, si, an[3:0], seg[6:0]);
 
-//delay loops for 2s
-//reg [21:0]delay = 0;
-//reg [2:0]delayFlag = 0;
+wire [15:0]secondsFastPace;
+SpeedwalkTime over32(
+CLK, rst, pulse, secondsFastPace
+);
+
+//step count generator
+reg [15:0] count = 0; //total steps  
+always @(posedge pulse)
+begin
+    if(count < 9999)
+        count <= count+1;
+    else if(count == 9999)
+        count <= 0;
+    else //should not happen
+        count <= 0;
+end
+
+//delay for 2s
+reg [21:0]delay = 0;
+reg [2:0]delayFlag = 0;
 reg changeDisp = 0;
 always @(posedge CLK) 
 begin
@@ -56,41 +75,8 @@ begin
     end
 end
 
-//delay handler 
-//period of 2s each
-//Total step count, Distance covered, Steps over 32(time)
-//High activity time, Total step count, Distance covered...and so on
-
-reg [15:0] count = 0; //total steps  
-reg [15:0] fixedM = 1; //fixed point rep of distance covered
-reg [15:0] ov32 = 2;
-reg [15:0] hiActiv = 3;
-always @(posedge changeDisp)
-begin
-    if(delayFlag == 0)
-        disp <= count; 
-    else if(delayFlag == 1)
-        disp <= fixedM; 
-    else if(delayFlag == 2)
-        disp <= ov32; 
-    else if(delayFlag == 3)
-        disp <= hiActiv;
-    else //should not happen
-        disp <= disp; 
-end
-
-
-
-always @(posedge pulse)
-begin
-    if(count < 9999)
-        count <= count+1;
-    else if(count == 9999)
-        count <= 0;
-    else //should not happen
-        count <= 0;
-end
-
+//fixed point milage
+reg [15:0] fixedM = 0; //fixed point rep of distance covered
 always @(count)
 begin
     if(count < 2048)
@@ -105,5 +91,32 @@ begin
         fixedM <= 20; 
 end
 
+
+//delay handler changes display mode
+//period of 2s each
+//Total step count, Distance covered, Steps over 32(time)
+//High activity time, Total step count, Distance covered...and so on
+reg [15:0] hiActiv = 3;
+always @(posedge changeDisp)
+begin
+    if(delayFlag == 0)begin
+        disp <= count; 
+        decimal <= 1;
+    end
+    else if(delayFlag == 1)begin
+        disp <= fixedM; 
+        decimal <= 0;
+    end
+    else if(delayFlag == 2)begin
+        disp <= secondsFastPace; //output of speedWalkTime
+        decimal <= 1;
+    end
+    else if(delayFlag == 3)begin
+        disp <= hiActiv;
+        decimal <= 1;
+    end
+    else //should not happen
+        disp <= disp; 
+end
 
 endmodule

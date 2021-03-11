@@ -6,8 +6,7 @@ module SpeedwalkTime(
     input clk,
     input reset,
     input pulse,
-    output [15:0] seconds,
-    output [15:0] test1
+    output [15:0] seconds
     );
     
    integer pulseCount = 0;
@@ -15,7 +14,7 @@ module SpeedwalkTime(
    time tickCount = 0;
    
    assign seconds = fastSecondsCount[15:0];
-   assign test1 = pulseCount[15:0];
+   //assign test1 = pulseCount[15:0];
     
    always @(posedge clk) begin
        if(reset) begin
