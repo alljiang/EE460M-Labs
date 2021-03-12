@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv 1000000
+`define clkDiv 1
 `define TPS (500000000/`clkDiv)
 
 module HighActivity(

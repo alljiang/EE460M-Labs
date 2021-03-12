@@ -17,75 +17,69 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14112
-WARNING: [Synth 8-2306] macro clkDiv redefined [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:2]
+INFO: [Synth 8-7075] Helper process launched with PID 16696
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.324 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'FitBit' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/FitBit.v:3]
-INFO: [Synth 8-6157] synthesizing module 'PulseGenerator' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'PulseGenerator' (1#1) [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:4]
-INFO: [Synth 8-6157] synthesizing module 'sevenseg' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v:3]
-INFO: [Synth 8-6157] synthesizing module 'bcd' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v:3]
-INFO: [Synth 8-226] default block is never used [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v:15]
-INFO: [Synth 8-6155] done synthesizing module 'bcd' (2#1) [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v:3]
-INFO: [Synth 8-6157] synthesizing module 'clkdiv' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/clkdiv.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (3#1) [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/clkdiv.v:3]
-INFO: [Synth 8-226] default block is never used [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (4#1) [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v:3]
-INFO: [Synth 8-6157] synthesizing module 'SpeedwalkTime' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/SpeedwalkTime.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'SpeedwalkTime' (5#1) [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/SpeedwalkTime.v:5]
-INFO: [Synth 8-6157] synthesizing module 'HighActivity' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/HighActivity.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'HighActivity' (6#1) [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/HighActivity.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'FitBit' (7#1) [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/FitBit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FitBit' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/FitBit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PulseGenerator' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'PulseGenerator' (1#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:4]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bcd' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'bcd' (2#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/clkdiv.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (3#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/clkdiv.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (4#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SpeedwalkTime' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/SpeedwalkTime.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SpeedwalkTime' (5#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/SpeedwalkTime.v:5]
+INFO: [Synth 8-6157] synthesizing module 'HighActivity' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/HighActivity.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'HighActivity' (6#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/HighActivity.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'FitBit' (7#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/FitBit.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1014.324 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.324 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.324 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1014.324 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1007.883 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Basys3_Master.xdc]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command 'set_property IOSTANDARD LVCMOS33 [get_ports {start]
-set_property PACKAGE_PIN V16 [get_ports {rst}]
-set_property IOSTANDARD LVCMOS33 [get_ports {rst}]
-set_property PACKAGE_PIN W16 [get_ports {MD[0]}]
-s ... (truncated) ' found in constraint file. [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Basys3_Master.xdc:13]
-Finished Parsing XDC File [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FitBit_propImpl.xdc].
+Parsing XDC File [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FitBit_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/FitBit_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1051.332 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1007.883 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1051.332 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1051.332 ; gain = 37.008
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1051.332 ; gain = 37.008
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1051.332 ; gain = 37.008
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_reg' in module 'sevenseg'
 ---------------------------------------------------------------------------------------------------
@@ -98,7 +92,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_reg' in module 'sev
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_reg' using encoding 'sequential' in module 'sevenseg'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1051.332 ; gain = 37.008
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -132,7 +126,7 @@ Detailed RTL Component Info :
 	   2 Input    4 Bit        Muxes := 2     
 	   4 Input    2 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -148,193 +142,193 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ticks[0] with 1st driver pin 'generator/ticks_reg[0]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:36]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ticks[0] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:36]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net ticks[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:36]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[31] with 1st driver pin 'generator/lastSeconds_reg[31]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[31] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[31] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[30] with 1st driver pin 'generator/lastSeconds_reg[30]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[30] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[30] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[29] with 1st driver pin 'generator/lastSeconds_reg[29]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[29] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[29] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[28] with 1st driver pin 'generator/lastSeconds_reg[28]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[28] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[28] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[27] with 1st driver pin 'generator/lastSeconds_reg[27]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[27] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[27] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[26] with 1st driver pin 'generator/lastSeconds_reg[26]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[26] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[26] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[25] with 1st driver pin 'generator/lastSeconds_reg[25]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[25] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[25] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[24] with 1st driver pin 'generator/lastSeconds_reg[24]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[24] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[24] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[23] with 1st driver pin 'generator/lastSeconds_reg[23]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[23] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[23] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[22] with 1st driver pin 'generator/lastSeconds_reg[22]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[22] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[22] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[21] with 1st driver pin 'generator/lastSeconds_reg[21]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[21] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[21] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[20] with 1st driver pin 'generator/lastSeconds_reg[20]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[20] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[20] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[19] with 1st driver pin 'generator/lastSeconds_reg[19]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[19] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[19] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[18] with 1st driver pin 'generator/lastSeconds_reg[18]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[18] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[18] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[17] with 1st driver pin 'generator/lastSeconds_reg[17]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[17] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[17] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[16] with 1st driver pin 'generator/lastSeconds_reg[16]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[16] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[16] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[15] with 1st driver pin 'generator/lastSeconds_reg[15]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[15] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[15] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[14] with 1st driver pin 'generator/lastSeconds_reg[14]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[14] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[14] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[13] with 1st driver pin 'generator/lastSeconds_reg[13]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[13] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[13] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[12] with 1st driver pin 'generator/lastSeconds_reg[12]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[12] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[12] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[11] with 1st driver pin 'generator/lastSeconds_reg[11]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[11] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[11] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[10] with 1st driver pin 'generator/lastSeconds_reg[10]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[10] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[10] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[9] with 1st driver pin 'generator/lastSeconds_reg[9]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[9] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[9] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[8] with 1st driver pin 'generator/lastSeconds_reg[8]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[8] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[8] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[7] with 1st driver pin 'generator/lastSeconds_reg[7]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[7] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[6] with 1st driver pin 'generator/lastSeconds_reg[6]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[6] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[5] with 1st driver pin 'generator/lastSeconds_reg[5]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[5] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[4] with 1st driver pin 'generator/lastSeconds_reg[4]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[4] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[3] with 1st driver pin 'generator/lastSeconds_reg[3]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[3] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[2] with 1st driver pin 'generator/lastSeconds_reg[2]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[2] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[1] with 1st driver pin 'generator/lastSeconds_reg[1]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[1] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[0] with 1st driver pin 'generator/lastSeconds_reg[0]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[0] with 2nd driver pin 'VCC' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[31] with 1st driver pin 'generator/pulseCount_reg[31]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[31] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[31] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[30] with 1st driver pin 'generator/pulseCount_reg[30]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[30] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[30] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[29] with 1st driver pin 'generator/pulseCount_reg[29]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[29] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[29] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[28] with 1st driver pin 'generator/pulseCount_reg[28]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[28] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[28] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[27] with 1st driver pin 'generator/pulseCount_reg[27]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[27] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[27] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[26] with 1st driver pin 'generator/pulseCount_reg[26]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[26] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[26] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[25] with 1st driver pin 'generator/pulseCount_reg[25]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[25] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[25] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[24] with 1st driver pin 'generator/pulseCount_reg[24]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[24] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[24] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[23] with 1st driver pin 'generator/pulseCount_reg[23]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[23] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[23] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[22] with 1st driver pin 'generator/pulseCount_reg[22]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[22] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[22] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[21] with 1st driver pin 'generator/pulseCount_reg[21]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[21] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[21] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[20] with 1st driver pin 'generator/pulseCount_reg[20]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[20] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[20] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[19] with 1st driver pin 'generator/pulseCount_reg[19]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[19] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[19] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[18] with 1st driver pin 'generator/pulseCount_reg[18]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[18] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[18] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[17] with 1st driver pin 'generator/pulseCount_reg[17]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[17] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[17] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[16] with 1st driver pin 'generator/pulseCount_reg[16]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[16] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[16] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[15] with 1st driver pin 'generator/pulseCount_reg[15]/Q' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[15] with 2nd driver pin 'GND' [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ticks[0] with 1st driver pin 'generator/ticks_reg[0]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin ticks[0] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:36]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net ticks[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:36]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[31] with 1st driver pin 'generator/lastSeconds_reg[31]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[31] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[31] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[30] with 1st driver pin 'generator/lastSeconds_reg[30]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[30] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[30] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[29] with 1st driver pin 'generator/lastSeconds_reg[29]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[29] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[29] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[28] with 1st driver pin 'generator/lastSeconds_reg[28]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[28] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[28] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[27] with 1st driver pin 'generator/lastSeconds_reg[27]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[27] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[27] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[26] with 1st driver pin 'generator/lastSeconds_reg[26]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[26] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[26] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[25] with 1st driver pin 'generator/lastSeconds_reg[25]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[25] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[25] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[24] with 1st driver pin 'generator/lastSeconds_reg[24]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[24] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[24] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[23] with 1st driver pin 'generator/lastSeconds_reg[23]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[23] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[23] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[22] with 1st driver pin 'generator/lastSeconds_reg[22]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[22] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[22] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[21] with 1st driver pin 'generator/lastSeconds_reg[21]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[21] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[21] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[20] with 1st driver pin 'generator/lastSeconds_reg[20]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[20] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[20] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[19] with 1st driver pin 'generator/lastSeconds_reg[19]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[19] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[19] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[18] with 1st driver pin 'generator/lastSeconds_reg[18]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[18] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[18] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[17] with 1st driver pin 'generator/lastSeconds_reg[17]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[17] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[17] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[16] with 1st driver pin 'generator/lastSeconds_reg[16]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[16] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[16] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[15] with 1st driver pin 'generator/lastSeconds_reg[15]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[15] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[15] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[14] with 1st driver pin 'generator/lastSeconds_reg[14]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[14] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[14] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[13] with 1st driver pin 'generator/lastSeconds_reg[13]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[13] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[13] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[12] with 1st driver pin 'generator/lastSeconds_reg[12]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[12] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[12] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[11] with 1st driver pin 'generator/lastSeconds_reg[11]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[11] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[11] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[10] with 1st driver pin 'generator/lastSeconds_reg[10]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[10] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[10] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[9] with 1st driver pin 'generator/lastSeconds_reg[9]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[9] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[9] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[8] with 1st driver pin 'generator/lastSeconds_reg[8]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[8] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[8] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[7] with 1st driver pin 'generator/lastSeconds_reg[7]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[7] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[6] with 1st driver pin 'generator/lastSeconds_reg[6]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[6] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[5] with 1st driver pin 'generator/lastSeconds_reg[5]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[5] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[4] with 1st driver pin 'generator/lastSeconds_reg[4]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[4] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[3] with 1st driver pin 'generator/lastSeconds_reg[3]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[3] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[2] with 1st driver pin 'generator/lastSeconds_reg[2]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[2] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[1] with 1st driver pin 'generator/lastSeconds_reg[1]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[1] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[0] with 1st driver pin 'generator/lastSeconds_reg[0]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin lastSeconds[0] with 2nd driver pin 'VCC' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net lastSeconds[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:62]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[31] with 1st driver pin 'generator/pulseCount_reg[31]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[31] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[31] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[30] with 1st driver pin 'generator/pulseCount_reg[30]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[30] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[30] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[29] with 1st driver pin 'generator/pulseCount_reg[29]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[29] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[29] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[28] with 1st driver pin 'generator/pulseCount_reg[28]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[28] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[28] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[27] with 1st driver pin 'generator/pulseCount_reg[27]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[27] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[27] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[26] with 1st driver pin 'generator/pulseCount_reg[26]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[26] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[26] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[25] with 1st driver pin 'generator/pulseCount_reg[25]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[25] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[25] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[24] with 1st driver pin 'generator/pulseCount_reg[24]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[24] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[24] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[23] with 1st driver pin 'generator/pulseCount_reg[23]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[23] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[23] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[22] with 1st driver pin 'generator/pulseCount_reg[22]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[22] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[22] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[21] with 1st driver pin 'generator/pulseCount_reg[21]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[21] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[21] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[20] with 1st driver pin 'generator/pulseCount_reg[20]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[20] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[20] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[19] with 1st driver pin 'generator/pulseCount_reg[19]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[19] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[19] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[18] with 1st driver pin 'generator/pulseCount_reg[18]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[18] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[18] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[17] with 1st driver pin 'generator/pulseCount_reg[17]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[17] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[17] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[16] with 1st driver pin 'generator/pulseCount_reg[16]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[16] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[16] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[15] with 1st driver pin 'generator/pulseCount_reg[15]/Q' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin pulseCount[15] with 2nd driver pin 'GND' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
 INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[15] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[14] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[13] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[12] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[11] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[10] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[9] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[8] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net outputPulse is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:64]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[15] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[14] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[13] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[12] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[11] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[10] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[9] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[8] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net pulseCount[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:65]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net outputPulse is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v:64]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1051.332 ; gain = 37.008
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1051.332 ; gain = 37.008
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1051.332 ; gain = 37.008
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1007.883 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1064.805 ; gain = 50.480
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1013.098 ; gain = 5.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -352,37 +346,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.434 ; gain = 62.109
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1026.176 ; gain = 18.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.434 ; gain = 62.109
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1026.176 ; gain = 18.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.434 ; gain = 62.109
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1026.176 ; gain = 18.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.434 ; gain = 62.109
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1026.176 ; gain = 18.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.434 ; gain = 62.109
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1026.176 ; gain = 18.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.434 ; gain = 62.109
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1026.176 ; gain = 18.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -399,38 +393,38 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    29|
-|3     |LUT1   |    18|
-|4     |LUT2   |    37|
-|5     |LUT3   |    19|
-|6     |LUT4   |    18|
-|7     |LUT5   |     8|
-|8     |LUT6   |    21|
+|2     |CARRY4 |    17|
+|3     |LUT1   |     2|
+|4     |LUT2   |    18|
+|5     |LUT3   |    11|
+|6     |LUT4   |     5|
+|7     |LUT5   |    14|
+|8     |LUT6   |    11|
 |9     |FDRE   |     3|
 |10    |IBUF   |     2|
 |11    |OBUF   |    13|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.434 ; gain = 62.109
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1026.176 ; gain = 18.293
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 198 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1076.434 ; gain = 25.102
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1076.434 ; gain = 62.109
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:40 . Memory (MB): peak = 1026.176 ; gain = 18.293
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1026.176 ; gain = 18.293
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1088.488 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1038.246 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1091.445 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1038.246 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-34 Infos, 1 Warnings, 167 Critical Warnings and 0 Errors encountered.
+34 Infos, 0 Warnings, 166 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1091.445 ; gain = 77.121
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 1038.246 ; gain = 30.363
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/synth_1/FitBit.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/synth_1/FitBit.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file FitBit_utilization_synth.rpt -pb FitBit_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 11 19:07:39 2021...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 11 19:19:48 2021...

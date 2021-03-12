@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/impl_1/FitBit.tcl"
+  variable script "C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/impl_1/FitBit.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,22 +122,22 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 3
+  set_param chipscope.maxJobs 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/synth_1/FitBit.dcp}}
+  add_files -quiet {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/synth_1/FitBit.dcp}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Basys3_Master.xdc}}
+  read_xdc {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Basys3_Master.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

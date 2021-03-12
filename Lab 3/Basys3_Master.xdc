@@ -10,7 +10,7 @@ set_property PACKAGE_PIN W5 [get_ports CLK]
  
 ## Switches
 set_property PACKAGE_PIN V17 [get_ports {start}]					
-	set_property IOSTANDARD LVCMOS33 [get_ports {start]
+	set_property IOSTANDARD LVCMOS33 [get_ports {start}]
 set_property PACKAGE_PIN V16 [get_ports {rst}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {rst}]
 set_property PACKAGE_PIN W16 [get_ports {MD[0]}]					

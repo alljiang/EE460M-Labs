@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/impl_1'
+HD_PWD='C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

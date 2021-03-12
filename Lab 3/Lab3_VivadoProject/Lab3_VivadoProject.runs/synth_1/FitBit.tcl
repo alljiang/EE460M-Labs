@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/synth_1/FitBit.tcl"
+  variable script "C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/synth_1/FitBit.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,29 +70,29 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
+set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/HighActivity.v}
-  {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v}
-  {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/SpeedwalkTime.v}
-  {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v}
-  {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/clkdiv.v}
-  {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v}
-  {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/FitBit.v}
+  {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/HighActivity.v}
+  {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/PulseGenerator.v}
+  {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/SpeedwalkTime.v}
+  {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v}
+  {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/clkdiv.v}
+  {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v}
+  {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/new/FitBit.v}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -103,8 +103,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Basys3_Master.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Basys3_Master.xdc}}]
+read_xdc {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Basys3_Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Basys3_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
