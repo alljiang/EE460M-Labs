@@ -1,30 +1,13 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 03/03/2021 07:50:44 PM
-// Design Name: 
-// Module Name: FitBit
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
 module FitBit(
     input CLK, rst, start,
     input [1:0] MD,
     output si,
     output [3:0]an,
     output [6:0]seg,
-    output dp);
+    output dp
+);
 
 reg decimal = 1;
 assign dp =  decimal;    
@@ -40,8 +23,8 @@ SpeedwalkTime over32(
 CLK, rst, pulse, secondsFastPace
 );
 
-reg [15:0] hiActiv = 0;
-module HighActivity(CLK, rst, pulse, hiActiv);
+wire [15:0] hiActiv = 0;
+HighActivity hi(CLK, rst, pulse, hiActiv);
 
 //step count generator
 reg [15:0] count = 0; //total steps  
@@ -61,7 +44,7 @@ reg [2:0]delayFlag = 0;
 reg changeDisp = 0;
 always @(posedge CLK) 
 begin
-    if(delay < 100-1) begin
+    if(delay < 2000000000-1) begin
     //2000000000-1
         delay <= delay+1;
         changeDisp <= 0;
@@ -69,10 +52,12 @@ begin
     else begin //delay > 2mil
         delay <= 0;
         changeDisp <= 1;
-        if(delayFlag < 3)
+        if(delayFlag < 3) begin
             delayFlag <= delayFlag+1;
-        else //delayFlag >= 3
+        end
+        else  begin//delayFlag >= 3
             delayFlag <=0;
+        end
     end
 end
 
@@ -80,16 +65,21 @@ end
 reg [15:0] fixedM = 0; //fixed point rep of distance covered
 always @(count)
 begin
-    if(count < 2048)
+    if(count < 2048) begin
         fixedM <= 0;
-    else if(2048 <= count < 4096)
+    end
+    else if(2048 <= count < 4096) begin
         fixedM <= 5;
-    else if(4096 <= count < 6144)
+    end
+    else if(4096 <= count < 6144) begin
         fixedM <= 10;
-    else if(6144 <= count < 8192)
+    end
+    else if(6144 <= count < 8192) begin
         fixedM <= 15;
-    else //if count >= 8192
+    end
+    else begin //if count >= 8192
         fixedM <= 20; 
+    end
 end
 
 
@@ -119,6 +109,5 @@ begin
         disp <= disp; 
     end
 end
-
 
 endmodule

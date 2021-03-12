@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log sevenseg.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sevenseg.tcl
+EAStep vivado -log FitBit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FitBit.tcl

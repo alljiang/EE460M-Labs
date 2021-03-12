@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log sevenseg.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sevenseg.tcl" );
+         "-log FitBit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FitBit.tcl" );
 
 
 
