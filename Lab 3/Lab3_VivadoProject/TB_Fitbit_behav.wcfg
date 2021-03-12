@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_Fitbit_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_Fitbit" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="126400000001fs"></ZoomEndTime>
+      <Cursor1Time time="10000000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/TB_Fitbit/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/mode" type="array">
+      <obj_property name="ElementShortName">mode[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mode[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/si" type="logic">
+      <obj_property name="ElementShortName">si</obj_property>
+      <obj_property name="ObjectShortName">si</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/an" type="array">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/seg" type="array">
+      <obj_property name="ElementShortName">seg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/dp" type="logic">
+      <obj_property name="ElementShortName">dp</obj_property>
+      <obj_property name="ObjectShortName">dp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/fb/secondsFastPace" type="array">
+      <obj_property name="ElementShortName">secondsFastPace[15:0]</obj_property>
+      <obj_property name="ObjectShortName">secondsFastPace[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/fb/hiActiv" type="array">
+      <obj_property name="ElementShortName">hiActiv[15:0]</obj_property>
+      <obj_property name="ObjectShortName">hiActiv[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/fb/count" type="array">
+      <obj_property name="ElementShortName">count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">count[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/fb/delay" type="array">
+      <obj_property name="ElementShortName">delay[21:0]</obj_property>
+      <obj_property name="ObjectShortName">delay[21:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/fb/delayFlag" type="array">
+      <obj_property name="ElementShortName">delayFlag[2:0]</obj_property>
+      <obj_property name="ObjectShortName">delayFlag[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/fb/fixedM" type="array">
+      <obj_property name="ElementShortName">fixedM[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fixedM[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/fb/changeDisp" type="logic">
+      <obj_property name="ElementShortName">changeDisp</obj_property>
+      <obj_property name="ObjectShortName">changeDisp</obj_property>
+   </wvobject>
+</wave_config>

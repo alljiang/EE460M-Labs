@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`define clkDiv 1
 
 module FitBit(
     input CLK, rst, start,
@@ -39,12 +40,12 @@ begin
 end
 
 //delay for 2s
-reg [21:0]delay = 0;
+time delay = 0;
 reg [2:0]delayFlag = 0;
 reg changeDisp = 0;
 always @(posedge CLK) 
 begin
-    if(delay < 2000000000-1) begin
+    if(delay < (2000000000/`clkDiv)-1) begin
     //2000000000-1
         delay <= delay+1;
         changeDisp <= 0;
@@ -87,7 +88,7 @@ end
 //period of 2s each
 //Total step count, Distance covered, Steps over 32(time)
 //High activity time, Total step count, Distance covered...and so on
-always @(posedge changeDisp)
+always @(posedge CLK)
 begin
     if(delayFlag == 0)begin
         disp <= count; 
