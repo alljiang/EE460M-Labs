@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv 1
+`define clkDiv 10
 
 module FitBit(
     input CLK, rst, start,
@@ -16,15 +16,15 @@ assign dp =  decimal;
 wire pulse; 
 PulseGenerator generator(CLK, start, MD[1:0], pulse);
 
-reg [15:0]disp = 0; //display register 
+reg [15:0]disp; //display register 
 sevenseg display(CLK, disp[15:0], rst, si, an[3:0], seg[6:0]);
 
-wire [15:0]secondsFastPace = 0;
+wire [15:0]secondsFastPace;
 SpeedwalkTime over32(
 CLK, rst, pulse, secondsFastPace
 );
 
-wire [15:0] hiActiv = 0;
+wire [15:0] hiActiv;
 HighActivity hi(CLK, rst, pulse, hiActiv);
 
 //step count generator

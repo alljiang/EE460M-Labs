@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv 1
+`define clkDiv 10
 `define TPS (500000000/`clkDiv)
 
 module SpeedwalkTime(
@@ -9,17 +9,29 @@ module SpeedwalkTime(
     output [15:0] seconds
     );
     
-   integer pulseCount = 0;
-   integer fastSecondsCount = 0;
-   time tickCount = 0;
+   reg[31:0] pulseCount = 0;
+   reg[31:0] fastSecondsCount = 0;
+   reg[63:0] tickCount = 0;
    
    assign seconds = fastSecondsCount[15:0];
-   //assign test1 = pulseCount[15:0];
+    
+    reg lastReset = 0;
+    reg lastPulse = 0;
     
    always @(posedge clk) begin
-       if(reset) begin
+   
+       if(!lastReset && reset) begin
            fastSecondsCount = 0;
+           tickCount = 0;
+           pulseCount = 0;
        end
+       lastReset = reset;
+       
+       if(!lastPulse && pulse) begin
+            pulseCount = pulseCount + 1;
+       end
+       lastPulse = pulse;
+       
        if(tickCount > 9 * `TPS) begin
            
        end
@@ -33,15 +45,5 @@ module SpeedwalkTime(
        end
        
    end
-   
-   always @(negedge reset) begin
-       tickCount = 0;
-       pulseCount = 0;
-       fastSecondsCount = 0;
-   end
-      
-   always @(posedge pulse) begin
-       pulseCount = pulseCount + 1;
-   end  
     
 endmodule

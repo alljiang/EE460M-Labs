@@ -5,9 +5,13 @@ module clkdiv(
     output fsmclk 
     );
     
-    // div by 8
-    reg count = 0;
-    assign fsmclk = count; 
-    always @(posedge clk) count = count + 1;
+    reg [10:0] count = 0;
+    reg out = 0;
+    assign fsmclk = out; 
+    
+    always @(posedge clk) begin 
+        count = count + 1;
+        if(count == 0) out = !out;
+    end
 
 endmodule

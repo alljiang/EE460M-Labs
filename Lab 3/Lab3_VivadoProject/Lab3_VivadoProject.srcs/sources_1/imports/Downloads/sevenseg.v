@@ -13,7 +13,6 @@ module sevenseg(
 reg [3:0] bcdin = 0; // Input to BCD, output directly tied to seg
 bcd b0 (bcdin, overflow, seg);
 
-// Clock divider - Divide-by-8
 wire slow_clk;
 clkdiv slowerclk( clk, slow_clk);
 
@@ -23,12 +22,13 @@ reg [1:0] next = 0;
 
 
 // Sequential logic
-always @(posedge slow_clk) current <= next; // Asynchronous reset if reset placed in sensitivity list here
+//always @(posedge slow_clk) current <= next; // Asynchronous reset if reset placed in sensitivity list here
 
 // Combinational logic
 reg [3:0] an_buf = 0;
 assign an = an_buf;
-always @(*) begin
+always @(posedge slow_clk) begin
+    current <= next;
     if(reset) begin // Synchronous reset
         bcdin = sw[3:0];// Set outputs
         an_buf = 4'b1110;

@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv 1
+`define clkDiv 10
 
 module PulseGenerator(
     input clk,
@@ -15,24 +15,28 @@ module PulseGenerator(
     11: Hybrid
     */
     
-    time ticks;
-    integer seconds;
-    integer period;
-    integer lastSeconds;
-    integer frequency;
-    integer pulseCount;
+    reg[63:0] ticks;
+    reg[31:0] seconds;
+    reg[31:0] period;
+    reg[31:0] lastSeconds;
+    reg[31:0] frequency;
+    reg[31:0] pulseCount;
+    
+    reg lastStart = 0;
     
     reg outputPulse;
     assign pulse = outputPulse;
     
-    always @(start) begin
-        ticks = 0;
-        outputPulse = 0;
-        lastSeconds = -1;
-        pulseCount = 0;
-    end
-    
     always @(posedge clk) begin
+    
+        if(!lastStart && start) begin
+            ticks = 0;
+            outputPulse = 0;
+            lastSeconds = -1;
+            pulseCount = 0; 
+        end
+        lastStart = start;
+    
        seconds = ticks / (500000000 / `clkDiv);
        if(mode == 2'b11) begin
            if(seconds < 1) frequency = 20;
