@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 `define clkDiv 10
+`define TPS (500000000/`clkDiv)
 
 module PulseGenerator(
     input clk,
@@ -61,7 +62,7 @@ module PulseGenerator(
        
        if(!start) frequency = 0;
        
-        period = (1000000000 / `clkDiv) / ((frequency)+1);
+        period = (1000000000 / `clkDiv) / ((frequency*2)+1);
        
        if(lastSeconds != seconds) begin
            //   first pulse of the second, let's force it to low

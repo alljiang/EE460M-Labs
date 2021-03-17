@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 `define clkDiv 10
+`define TPS (500000000/`clkDiv)
 
 module FitBit(
     input CLK, rst, start,
@@ -27,16 +28,13 @@ HighActivity hi(CLK, rst, pulse, hiActiv);
 assign debug = pulse;
 
 //step count generator
-reg [15:0] count = 0; //total steps  
+reg [31:0] count = 0; //total steps  
 always @(posedge pulse)
 begin
     if(rst) begin
         count <= 0;
     end
-    if(count < 9999)
-        count <= count+1;
-    else
-        count <= 10000;
+    else count <= count+1;
 end
 
 //delay for 2s
@@ -45,6 +43,8 @@ reg [2:0]delayFlag = 0;
 reg changeDisp = 0;
 always @(posedge CLK) 
 begin
+    if(rst) delayFlag = 0;
+
     if(delay < (2000000000/`clkDiv)-1) begin
     //2000000000-1
         delay <= delay+1;
@@ -65,21 +65,7 @@ end
 //fixed point milage
 reg [15:0] fixedM = 0; //fixed point rep of distance covered
 always @(posedge CLK) begin
-    if(count < 2048) begin
-        fixedM <= 0;
-    end
-    else if(2048 <= count && count < 4096) begin
-        fixedM <= 5;
-    end
-    else if(4096 <= count && count < 6144) begin
-        fixedM <= 10;
-    end
-    else if(6144 <= count && count < 8192) begin
-        fixedM <= 15;
-    end
-    else begin //if count >= 8192
-        fixedM <= 20; 
-    end
+    fixedM <= count / 2048 * 5; 
 end
 
 
@@ -96,7 +82,7 @@ begin
     if(delayFlag == 0)begin
         if(count > 9999) begin
             disp <= 9999;
-            si <= 1;
+            si = 1;
         end
         else begin
             disp <= count;

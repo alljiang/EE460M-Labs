@@ -21,29 +21,29 @@ module HighActivity(
     
     always @(posedge clk) begin
     
-        if(!lastReset && reset) begin
+        if(reset) begin
             tickCount = 0;
             currentActivityTime = 0;
             totalActivityTime = 0;
             stepCountThisSecond = 0;
         end
-        lastReset = reset;
+        else begin
+            if(!lastPulse && pulse) begin
+                stepCountThisSecond = stepCountThisSecond + 1;
+            end
         
-        if(!lastPulse && pulse) begin
-            stepCountThisSecond = stepCountThisSecond + 1;
-        end
-    
-        if(tickCount % `TPS == 0) begin
-            //  end of a second
-            if(stepCountThisSecond >= 64) currentActivityTime = currentActivityTime + 1;
-            else currentActivityTime = 0; 
-            
-            if(currentActivityTime == 60) totalActivityTime = totalActivityTime + 60;
-            else if(currentActivityTime > 60) totalActivityTime = totalActivityTime + 1; 
-            stepCountThisSecond = 0;
-        end
-    
-        tickCount = tickCount + 1;
+            if(tickCount % `TPS == 0) begin
+                //  end of a second
+                if(stepCountThisSecond >= 64) currentActivityTime = currentActivityTime + 1;
+                else currentActivityTime = 0; 
+                
+                if(currentActivityTime == 60) totalActivityTime = totalActivityTime + 60;
+                else if(currentActivityTime > 60) totalActivityTime = totalActivityTime + 1; 
+                stepCountThisSecond = 0;
+            end
+        
+            tickCount = tickCount + 1;
+        end        
     end
     
 endmodule
