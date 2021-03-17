@@ -4,39 +4,39 @@
 module FitBit(
     input CLK, rst, start,
     input [1:0] MD,
-    output si,
+    output reg si = 0,
     output [3:0]an,
     output [6:0]seg,
-    output dp
+    output dp,
+    output debug
 );
 
-reg decimal = 1;
-assign dp =  decimal;    
-
-wire pulse; 
+reg needDP = 0;
+wire pulse;
 PulseGenerator generator(CLK, start, MD[1:0], pulse);
 
 reg [15:0]disp; //display register 
-sevenseg display(CLK, disp[15:0], rst, si, an[3:0], seg[6:0]);
+sevenseg display(CLK, disp[15:0], rst, none, an[3:0], seg[6:0], needDP, dp);
 
 wire [15:0]secondsFastPace;
-SpeedwalkTime over32(
-CLK, rst, pulse, secondsFastPace
-);
+SpeedwalkTime over32(CLK, rst, pulse, secondsFastPace);
 
 wire [15:0] hiActiv;
 HighActivity hi(CLK, rst, pulse, hiActiv);
+
+assign debug = pulse;
 
 //step count generator
 reg [15:0] count = 0; //total steps  
 always @(posedge pulse)
 begin
+    if(rst) begin
+        count <= 0;
+    end
     if(count < 9999)
         count <= count+1;
-    else if(count == 9999)
-        count <= 0;
-    else //should not happen
-        count <= 0;
+    else
+        count <= 10000;
 end
 
 //delay for 2s
@@ -64,18 +64,17 @@ end
 
 //fixed point milage
 reg [15:0] fixedM = 0; //fixed point rep of distance covered
-always @(count)
-begin
+always @(posedge CLK) begin
     if(count < 2048) begin
         fixedM <= 0;
     end
-    else if(2048 <= count < 4096) begin
+    else if(2048 <= count && count < 4096) begin
         fixedM <= 5;
     end
-    else if(4096 <= count < 6144) begin
+    else if(4096 <= count && count < 6144) begin
         fixedM <= 10;
     end
-    else if(6144 <= count < 8192) begin
+    else if(6144 <= count && count < 8192) begin
         fixedM <= 15;
     end
     else begin //if count >= 8192
@@ -90,21 +89,31 @@ end
 //High activity time, Total step count, Distance covered...and so on
 always @(posedge CLK)
 begin
+    if(rst) begin
+        si = 0;
+    end
+
     if(delayFlag == 0)begin
-        disp <= count; 
-        decimal <= 1;
+        if(count > 9999) begin
+            disp <= 9999;
+            si <= 1;
+        end
+        else begin
+            disp <= count;
+        end 
+        needDP <= 0;
     end
     else if(delayFlag == 1)begin
         disp <= fixedM; 
-        decimal <= 0;
+        needDP <= 1;
     end
     else if(delayFlag == 2)begin
         disp <= secondsFastPace; //output of speedWalkTime
-        decimal <= 1;
+        needDP <= 0;
     end
     else if(delayFlag == 3)begin
         disp <= hiActiv;
-        decimal <= 1;
+        needDP <= 0;
     end
     else begin//should not happen
         disp <= disp; 

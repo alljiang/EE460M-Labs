@@ -61,7 +61,7 @@ module PulseGenerator(
        
        if(!start) frequency = 0;
        
-        period = (1000000000 / `clkDiv) / ((frequency*4)+1);
+        period = (1000000000 / `clkDiv) / ((frequency)+1);
        
        if(lastSeconds != seconds) begin
            //   first pulse of the second, let's force it to low
