@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Mar 17 02:41:05 2021
-# Process ID: 17304
+# Start of session at: Wed Mar 17 22:30:14 2021
+# Process ID: 16108
 # Current directory: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/synth_1
 # Command line: vivado.exe -log FitBit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FitBit.tcl
 # Log file: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.runs/synth_1/FitBit.vds

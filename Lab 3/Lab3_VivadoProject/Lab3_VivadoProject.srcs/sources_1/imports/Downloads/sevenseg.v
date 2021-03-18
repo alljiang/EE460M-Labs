@@ -3,7 +3,7 @@
 module sevenseg(
   input clk,
   input [15:0] sw,
-  input reset, //btnC
+  input reset, 
   input overflow,
   output [3:0] an,
   output [6:0] seg,

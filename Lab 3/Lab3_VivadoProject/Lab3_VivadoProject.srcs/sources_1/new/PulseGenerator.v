@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv 10
+`define clkDiv 100000
 `define TPS (500000000/`clkDiv)
 
 module PulseGenerator(
@@ -16,29 +16,31 @@ module PulseGenerator(
     11: Hybrid
     */
     
-    reg[63:0] ticks;
-    reg[31:0] seconds;
-    reg[31:0] period;
-    reg[31:0] lastSeconds;
-    reg[31:0] frequency;
-    reg[31:0] pulseCount;
+    reg[63:0] ticks = 0;
+    reg[63:0] ticksOffset = 0;
+    reg[31:0] seconds = 0;
+    reg[31:0] period = 0;
+    reg[31:0] lastSeconds = 0;
+    reg[31:0] frequency = 0;
+    reg[31:0] pulseCount = 0;
     
     reg lastStart = 0;
     
-    reg outputPulse;
+    reg outputPulse = 0;
     assign pulse = outputPulse;
     
     always @(posedge clk) begin
     
         if(!lastStart && start) begin
             ticks = 0;
+            ticksOffset = 0;
             outputPulse = 0;
             lastSeconds = -1;
             pulseCount = 0; 
         end
         lastStart = start;
     
-       seconds = ticks / (500000000 / `clkDiv);
+       seconds = ticks / `TPS;
        if(mode == 2'b11) begin
            if(seconds < 1) frequency = 20;
            else if(seconds < 2) frequency = 33;
@@ -62,16 +64,17 @@ module PulseGenerator(
        
        if(!start) frequency = 0;
        
-        period = (1000000000 / `clkDiv) / ((frequency*2)+1);
+        period = `TPS / ((frequency*2)+1);
        
        if(lastSeconds != seconds) begin
            //   first pulse of the second, let's force it to low
            outputPulse = 0;
            pulseCount = 0;
            lastSeconds = seconds;
+           ticksOffset = ticks;
        end
-       else if(ticks % period == 0) begin
-           if(pulseCount < frequency || outputPulse) outputPulse = !outputPulse;
+       else if((ticks - ticksOffset) % period == 0) begin
+           if((pulseCount < frequency) || outputPulse) outputPulse = !outputPulse;
            if(outputPulse) pulseCount = pulseCount + 1;
        end
        

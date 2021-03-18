@@ -11,7 +11,7 @@ wire [3:0] an;
 wire [6:0] seg;
 wire dp;
 
-always #10 CLK = ~CLK;
+always #100000 CLK = ~CLK;
 
 FitBit fb(
     CLK, rst, start,
@@ -26,7 +26,7 @@ initial begin
 
     rst = 0;
     start = 1;
-    mode = 2'b10;
+    mode = 2'b11;
     #2000000000;
     #2000000000;
     #2000000000;

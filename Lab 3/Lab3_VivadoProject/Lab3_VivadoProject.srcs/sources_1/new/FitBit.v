@@ -1,6 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv 10
-`define TPS (500000000/`clkDiv)
+`define clkDiv 100000
 
 module FitBit(
     input CLK, rst, start,
@@ -54,10 +53,10 @@ begin
         delay <= 0;
         changeDisp <= 1;
         if(delayFlag < 3) begin
-            delayFlag <= delayFlag+1;
+            delayFlag = delayFlag+1;
         end
         else  begin//delayFlag >= 3
-            delayFlag <=0;
+            delayFlag =0;
         end
     end
 end

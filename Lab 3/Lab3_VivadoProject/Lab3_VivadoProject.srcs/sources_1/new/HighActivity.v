@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv 10
+`define clkDiv 100000
 `define TPS (500000000/`clkDiv)
 
 module HighActivity(
@@ -9,10 +9,10 @@ module HighActivity(
     output [15:0] highActivityTime
     );
     
-    reg[31:0] totalActivityTime = 0;
-    reg[31:0] currentActivityTime = 0;
-    reg[63:0] tickCount = 0;
-    reg[31:0] stepCountThisSecond = 0;
+    integer totalActivityTime = 0;
+    integer currentActivityTime = 0;
+    time tickCount = 0;
+    integer stepCountThisSecond = 0;
     
     assign highActivityTime = totalActivityTime[15:0];
     
@@ -31,6 +31,7 @@ module HighActivity(
             if(!lastPulse && pulse) begin
                 stepCountThisSecond = stepCountThisSecond + 1;
             end
+            lastPulse = pulse;
         
             if(tickCount % `TPS == 0) begin
                 //  end of a second
