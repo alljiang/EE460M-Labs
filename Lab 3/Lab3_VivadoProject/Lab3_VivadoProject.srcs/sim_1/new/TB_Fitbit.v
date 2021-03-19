@@ -11,7 +11,7 @@ wire [3:0] an;
 wire [6:0] seg;
 wire dp;
 
-always #100000 CLK = ~CLK;
+always #(5*10000) CLK = ~CLK;
 
 FitBit fb(
     CLK, rst, start,

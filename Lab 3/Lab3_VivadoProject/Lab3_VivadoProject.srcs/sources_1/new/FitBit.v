@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv 100000
+`define clkDiv (10*1)
 
 module FitBit(
     input CLK, rst, start,
@@ -76,9 +76,9 @@ always @(posedge CLK)
 begin
     if(rst) begin
         si = 0;
+        disp <= 9999;
     end
-
-    if(delayFlag == 0)begin
+    else if(delayFlag == 0)begin
         if(count > 9999) begin
             disp <= 9999;
             si = 1;

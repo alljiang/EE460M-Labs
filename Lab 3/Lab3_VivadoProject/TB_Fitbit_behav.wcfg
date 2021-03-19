@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="113765000932500fs"></ZoomStartTime>
-      <ZoomEndTime time="120635000932501fs"></ZoomEndTime>
-      <Cursor1Time time="109083740891670fs"></Cursor1Time>
+      <ZoomStartTime time="1920000000000fs"></ZoomStartTime>
+      <ZoomEndTime time="2267500000001fs"></ZoomEndTime>
+      <Cursor1Time time="370000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="227"></NameColumnWidth>
-      <ValueColumnWidth column_width="114"></ValueColumnWidth>
+      <ValueColumnWidth column_width="106"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="13" />
+   <WVObjectSize size="15" />
    <wvobject fp_name="/TB_Fitbit/CLK" type="logic">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
@@ -74,6 +74,15 @@
    <wvobject fp_name="/TB_Fitbit/fb/generator/ticks" type="array">
       <obj_property name="ElementShortName">ticks[63:0]</obj_property>
       <obj_property name="ObjectShortName">ticks[63:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/fb/hi/currentActivityTime" type="array">
+      <obj_property name="ElementShortName">currentActivityTime[31:0]</obj_property>
+      <obj_property name="ObjectShortName">currentActivityTime[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Fitbit/fb/hi/stepCountThisSecond" type="array">
+      <obj_property name="ElementShortName">stepCountThisSecond[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stepCountThisSecond[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

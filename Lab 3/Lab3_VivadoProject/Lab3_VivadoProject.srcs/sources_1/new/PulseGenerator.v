@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
-`define clkDiv 100000
-`define TPS (500000000/`clkDiv)
+`define clkDiv (10*1)
+`define TPS (1000000000/`clkDiv)
 
 module PulseGenerator(
     input clk,

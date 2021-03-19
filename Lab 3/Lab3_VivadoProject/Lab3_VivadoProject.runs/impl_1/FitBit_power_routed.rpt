@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Wed Mar 17 22:44:11 2021
+| Date             : Fri Mar 19 02:01:45 2021
 | Host             : Allen-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file FitBit_power_routed.rpt -pb FitBit_power_summary_routed.pb -rpx FitBit_power_routed.rpx
 | Design           : FitBit
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.215        |
+| Total On-Chip Power (W)  | 0.201        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.143        |
+| Dynamic (W)              | 0.129        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 83.9         |
-| Junction Temperature (C) | 26.1         |
+| Max Ambient (C)          | 84.0         |
+| Junction Temperature (C) | 26.0         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.006 |        3 |       --- |             --- |
-| Slice Logic    |     0.061 |     8058 |       --- |             --- |
-|   LUT as Logic |     0.053 |     5439 |     20800 |           26.15 |
-|   CARRY4       |     0.007 |     1222 |      8150 |           14.99 |
-|   Register     |    <0.001 |      672 |     41600 |            1.62 |
+| Clocks         |     0.005 |        3 |       --- |             --- |
+| Slice Logic    |     0.052 |     6936 |       --- |             --- |
+|   LUT as Logic |     0.045 |     4638 |     20800 |           22.30 |
+|   CARRY4       |     0.006 |     1070 |      8150 |           13.13 |
+|   Register     |    <0.001 |      717 |     41600 |            1.72 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |       14 |       --- |             --- |
-| Signals        |     0.073 |     7385 |       --- |             --- |
+| Signals        |     0.068 |     6256 |       --- |             --- |
 | DSPs           |     0.003 |        4 |        90 |            4.44 |
 | I/O            |     0.001 |       19 |       106 |           17.92 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.215 |          |           |                 |
+| Total          |     0.201 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.151 |       0.142 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.137 |       0.127 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -142,11 +142,11 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| FitBit      |     0.143 |
-|   display   |     0.006 |
-|   generator |     0.113 |
-|   hi        |     0.015 |
-|   over32    |     0.006 |
+| FitBit      |     0.129 |
+|   display   |     0.007 |
+|   generator |     0.112 |
+|   hi        |     0.002 |
+|   over32    |     0.005 |
 +-------------+-----------+
 
 
