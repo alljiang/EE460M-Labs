@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv (10*1)
+`define clkDiv (10*00001)
 `define TPS (1000000000/`clkDiv)
 
 module SpeedwalkTime(

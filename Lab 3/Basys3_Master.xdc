@@ -53,3 +53,5 @@ set_property PACKAGE_PIN W4 [get_ports {an[3]}]
 	
 set_property PACKAGE_PIN J1 [get_ports {debug}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {debug}]
+set_property PACKAGE_PIN L2 [get_ports {debug2}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {debug2}]

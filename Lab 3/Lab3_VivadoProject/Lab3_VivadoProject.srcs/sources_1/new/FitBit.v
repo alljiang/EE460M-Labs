@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv (10*1)
+`define clkDiv (10*00001)
 
 module FitBit(
     input CLK, rst, start,
@@ -8,12 +8,13 @@ module FitBit(
     output [3:0]an,
     output [6:0]seg,
     output dp,
-    output debug
+    output debug,
+    output debug2
 );
 
 reg needDP = 0;
 wire pulse;
-PulseGenerator generator(CLK, start, MD[1:0], pulse);
+PulseGenerator generator(CLK, start, MD[1:0], pulse, debug2);
 
 reg [15:0]disp; //display register 
 sevenseg display(CLK, disp[15:0], rst, none, an[3:0], seg[6:0], needDP, dp);
@@ -78,31 +79,35 @@ begin
         si = 0;
         disp <= 9999;
     end
-    else if(delayFlag == 0)begin
-        if(count > 9999) begin
-            disp <= 9999;
-            si = 1;
-        end
-        else begin
-            disp <= count;
-        end 
-        needDP <= 0;
-    end
-    else if(delayFlag == 1)begin
-        disp <= fixedM; 
-        needDP <= 1;
-    end
-    else if(delayFlag == 2)begin
-        disp <= secondsFastPace; //output of speedWalkTime
-        needDP <= 0;
-    end
-    else if(delayFlag == 3)begin
-        disp <= hiActiv;
-        needDP <= 0;
-    end
-    else begin//should not happen
-        disp <= disp; 
-    end
+//    else if(delayFlag == 0)begin
+//        if(count > 9999) begin
+//            disp <= 9999;
+//            si = 1;
+//        end
+//        else begin
+//            disp <= count;
+//        end 
+//        needDP <= 0;
+//    end
+//    else if(delayFlag == 1)begin
+//        disp <= fixedM; 
+//        needDP <= 1;
+//    end
+//    else if(delayFlag == 2)begin
+//        disp <= secondsFastPace; //output of speedWalkTime
+//        needDP <= 0;
+//    end
+//    else if(delayFlag == 3)begin
+//        disp <= hiActiv;
+//        needDP <= 0;
+//    end
+//    else begin//should not happen
+//        disp <= disp; 
+//    end
+
+    disp <= secondsFastPace;
+    needDP <= 0;
+
 end
 
 endmodule

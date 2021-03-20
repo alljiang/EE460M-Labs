@@ -19,7 +19,9 @@ FitBit fb(
     si,
     an,
     seg,
-    dp
+    dp,
+    debug,
+    debug2
 );
 
 initial begin

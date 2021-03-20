@@ -5,7 +5,7 @@ module clkdiv(
     output fsmclk 
     );
     
-    reg [10:0] count = 0;
+    reg [14:0] count = 0;
     reg out = 0;
     assign fsmclk = out; 
     

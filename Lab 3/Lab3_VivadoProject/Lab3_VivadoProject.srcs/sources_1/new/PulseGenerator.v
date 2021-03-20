@@ -1,12 +1,13 @@
 `timescale 1ns / 1ps
-`define clkDiv (10*1)
+`define clkDiv (10*00001)
 `define TPS (1000000000/`clkDiv)
 
 module PulseGenerator(
     input clk,
     input start,
     input [1:0] mode,
-    output pulse
+    output pulse,
+    output reg debug2 = 0
     );
     
     /*
@@ -17,7 +18,7 @@ module PulseGenerator(
     */
     
     reg[63:0] ticks = 0;
-    reg[63:0] ticksOffset = 0;
+    reg[63:0] counter = 0;
     reg[31:0] seconds = 0;
     reg[31:0] period = 0;
     reg[31:0] lastSeconds = 0;
@@ -30,10 +31,11 @@ module PulseGenerator(
     assign pulse = outputPulse;
     
     always @(posedge clk) begin
+        debug2 = !debug2; 
     
         if(!lastStart && start) begin
             ticks = 0;
-            ticksOffset = 0;
+            counter = 0;
             outputPulse = 0;
             lastSeconds = -1;
             pulseCount = 0; 
@@ -71,12 +73,15 @@ module PulseGenerator(
            outputPulse = 0;
            pulseCount = 0;
            lastSeconds = seconds;
-           ticksOffset = ticks;
+           counter = 0;
        end
-       else if((ticks - ticksOffset) % period == 0) begin
-           if((pulseCount < frequency) || outputPulse) outputPulse = !outputPulse;
-           if(outputPulse) pulseCount = pulseCount + 1;
+       else if(counter >= period) begin
+           counter = 0;
+           outputPulse = !outputPulse;
+//           if((pulseCount < frequency) || outputPulse) outputPulse = !outputPulse;
+//           if(outputPulse) pulseCount = pulseCount + 1;
        end
+       else counter = counter + 1;
        
        ticks = ticks + 1;
     end

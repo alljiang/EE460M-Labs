@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv (10*1)
+`define clkDiv (10*00001)
 `define TPS (1000000000/`clkDiv)
 
 module HighActivity(
@@ -15,6 +15,7 @@ module HighActivity(
     integer stepCountThisSecond = 0;
     
     assign highActivityTime = totalActivityTime[15:0];
+//    assign highActivityTime = stepCountThisSecond[15:0];
    
     reg lastPulse = 0;
     
