@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv (10*000001)
+`define clkDiv (10*00001)
 
 module FitBit(
     input CLK, rst, start,
@@ -7,14 +7,12 @@ module FitBit(
     output reg si = 0,
     output [3:0]an,
     output [6:0]seg,
-    output dp,
-    output debug,
-    output debug2
+    output dp
 );
 
 reg needDP = 0;
 wire pulse;
-PulseGenerator generator(CLK, start, MD[1:0], pulse, debug2);
+PulseGenerator generator(CLK, start, rst, MD[1:0], pulse);
 
 reg [15:0]disp; //display register 
 sevenseg display(CLK, disp[15:0], rst, none, an[3:0], seg[6:0], needDP, dp);
@@ -25,17 +23,9 @@ SpeedwalkTime over32(CLK, rst, pulse, secondsFastPace);
 wire [15:0] hiActiv;
 HighActivity hi(CLK, rst, pulse, hiActiv);
 
-assign debug = pulse;
-
 //step count generator
-reg [31:0] count = 0; //total steps  
-always @(posedge pulse)
-begin
-    if(rst) begin
-        count <= 0;
-    end
-    else count <= count+1;
-end
+reg [31:0] count = 0; //total steps
+reg lastPulse = 0;
 
 //delay for 2s
 time delay = 0;
@@ -44,6 +34,9 @@ reg changeDisp = 0;
 always @(posedge CLK) 
 begin
     if(rst) delayFlag = 0;
+    if(rst) count <= 0;
+    else if(!lastPulse && pulse) count <= count+1;
+    lastPulse <= pulse;
 
     if(delay < (2000000000/`clkDiv)-1) begin
     //2000000000-1
@@ -79,36 +72,31 @@ begin
         si = 0;
         disp <= 9999;
     end
-//    else if(delayFlag == 0)begin
-//        if(count > 9999) begin
-//            disp <= 9999;
-//            si = 1;
-//        end
-//        else begin
-//            disp <= count;
-//        end 
-//        needDP <= 0;
-//    end
-//    else if(delayFlag == 1)begin
-//        disp <= fixedM; 
-//        needDP <= 1;
-//    end
-//    else if(delayFlag == 2)begin
-//        disp <= secondsFastPace; //output of speedWalkTime
-//        needDP <= 0;
-//    end
-//    else if(delayFlag == 3)begin
-//        disp <= hiActiv;
-//        needDP <= 0;
-//    end
-//    else begin//should not happen
-//        disp <= disp; 
-//    end
-
-    disp <= secondsFastPace;
-//    disp <= hiActiv;
-    needDP <= 0;
-
+    else if(delayFlag == 0)begin
+        if(count > 9999) begin
+            disp <= 9999;
+            si = 1;
+        end
+        else begin
+            disp <= count;
+        end 
+        needDP <= 0;
+    end
+    else if(delayFlag == 1)begin
+        disp <= fixedM; 
+        needDP <= 1;
+    end
+    else if(delayFlag == 2)begin
+        disp <= secondsFastPace; //output of speedWalkTime
+        needDP <= 0;
+    end
+    else if(delayFlag == 3)begin
+        disp <= hiActiv;
+        needDP <= 0;
+    end
+    else begin//should not happen
+        disp <= disp; 
+    end
 end
 
 endmodule

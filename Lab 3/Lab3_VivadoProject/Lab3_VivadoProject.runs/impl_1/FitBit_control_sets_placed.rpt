@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Mar 20 22:23:11 2021
+| Date         : Sun Mar 21 18:08:16 2021
 | Host         : Allen-PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file FitBit_control_sets_placed.rpt
 | Design       : FitBit
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     9 |
-|    Minimum number of control sets                        |     9 |
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |     9 |
+| Unused register locations in slices containing registers |    24 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     9 |
-| >= 0 to < 4        |     0 |
+| Total control sets |    19 |
+| >= 0 to < 4        |     2 |
 | >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     7 |
+| >= 16              |    15 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,30 +58,40 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             107 |           32 |
+| No           | No                    | No                     |             134 |           54 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             100 |           25 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | Yes                   | No                     |             240 |           66 |
+| Yes          | No                    | No                     |               1 |            1 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             240 |           60 |
+| Yes          | Yes                   | No                     |             305 |           82 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------+---------------------------------------+------------------------------+------------------+----------------+--------------+
-|      Clock Signal      |             Enable Signal             |       Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
-+------------------------+---------------------------------------+------------------------------+------------------+----------------+--------------+
-|  display/slowerclk/CLK |                                       | rst_IBUF                     |                1 |              4 |         4.00 |
-|  display/slowerclk/CLK |                                       |                              |                3 |              8 |         2.67 |
-|  CLK_IBUF_BUFG         | over32/fastSecondsCount               | rst_IBUF                     |                4 |             16 |         4.00 |
-|  CLK_IBUF_BUFG         | generator/lastSeconds_reg[31]_i_2_n_1 | generator/lastSeconds        |                8 |             32 |         4.00 |
-|  debug_OBUF_BUFG       |                                       | rst_IBUF                     |                8 |             32 |         4.00 |
-|  CLK_IBUF_BUFG         |                                       | generator/counter[0]_i_1_n_0 |               16 |             64 |         4.00 |
-|  CLK_IBUF_BUFG         | over32/secondsCount1_carry__2_n_0     | rst_IBUF                     |               16 |             64 |         4.00 |
-|  CLK_IBUF_BUFG         |                                       |                              |               29 |             99 |         3.41 |
-|  CLK_IBUF_BUFG         | over32/secondsCount                   | rst_IBUF                     |               32 |            128 |         4.00 |
-+------------------------+---------------------------------------+------------------------------+------------------+----------------+--------------+
++------------------------+-----------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|      Clock Signal      |           Enable Signal           |              Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+-----------------------------------+--------------------------------------------+------------------+----------------+--------------+
+|  CLK_IBUF_BUFG         | si_i_1_n_0                        | rst_IBUF                                   |                1 |              1 |         1.00 |
+|  display/slowerclk/CLK | display/dp_i_1_n_0                |                                            |                1 |              1 |         1.00 |
+|  display/slowerclk/CLK |                                   | rst_IBUF                                   |                3 |              4 |         1.33 |
+|  display/slowerclk/CLK |                                   |                                            |                5 |              8 |         1.60 |
+|  CLK_IBUF_BUFG         |                                   | disp[15]_i_1_n_0                           |                8 |             16 |         2.00 |
+|  CLK_IBUF_BUFG         | over32/fastSecondsCount           | rst_IBUF                                   |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG         | hi/totalActivityTime[0]_i_1_n_0   | rst_IBUF                                   |                4 |             16 |         4.00 |
+|  CLK_IBUF_BUFG         |                                   | clear                                      |                7 |             28 |         4.00 |
+|  CLK_IBUF_BUFG         | hi/tickCount0_carry__6_n_0        | hi/currentActivityTime[0]_i_1_n_0          |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG         | generator/pulse_reg_0             | hi/tickCount[0]_i_1_n_0                    |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG         | generator/pulse_reg_0             | over32/pulseCount[0]_i_1_n_0               |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG         | generator/seconds[31]_i_2_n_0     | generator/seconds[31]_i_1_n_0              |               12 |             32 |         2.67 |
+|  CLK_IBUF_BUFG         | over32/secondsCount               | rst_IBUF                                   |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG         | generator/count0                  | rst_IBUF                                   |               13 |             48 |         3.69 |
+|  CLK_IBUF_BUFG         |                                   | generator/tickSecondCounter_reg[0]_i_1_n_0 |               16 |             64 |         4.00 |
+|  CLK_IBUF_BUFG         |                                   | hi/tickCount[0]_i_1_n_0                    |               16 |             64 |         4.00 |
+|  CLK_IBUF_BUFG         |                                   | generator/counter[0]_i_1_n_0               |               16 |             64 |         4.00 |
+|  CLK_IBUF_BUFG         | over32/secondsCount1_carry__2_n_0 | rst_IBUF                                   |               16 |             64 |         4.00 |
+|  CLK_IBUF_BUFG         |                                   |                                            |               49 |            126 |         2.57 |
++------------------------+-----------------------------------+--------------------------------------------+------------------+----------------+--------------+
 
 

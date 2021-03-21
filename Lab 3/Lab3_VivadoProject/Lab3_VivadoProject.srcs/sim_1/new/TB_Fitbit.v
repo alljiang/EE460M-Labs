@@ -19,16 +19,14 @@ FitBit fb(
     si,
     an,
     seg,
-    dp,
-    debug,
-    debug2
+    dp
 );
 
 initial begin
 
     rst = 0;
     start = 1;
-    mode = 2'b01;
+    mode = 2'b11;
 end
 
 endmodule

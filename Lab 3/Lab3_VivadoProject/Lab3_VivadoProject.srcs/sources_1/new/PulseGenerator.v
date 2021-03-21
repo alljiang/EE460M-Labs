@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
-`define clkDiv (10*000001)
+`define clkDiv (10*00001)
 `define TPS (1000000000/`clkDiv)
 
 module PulseGenerator(
     input clk,
     input start,
+    input reset,
     input [1:0] mode,
-    output reg pulse = 0,
-    output reg debug2 = 0
+    output reg pulse = 0
     );
     
     /*
@@ -17,66 +17,80 @@ module PulseGenerator(
     11: Hybrid
     */
     
-    reg[63:0] ticks = 0;
-    reg[63:0] counter = 0;
-    reg[31:0] seconds = 0;
-    reg[31:0] period = 0;
-    reg[31:0] lastSeconds = 0;
-    reg[31:0] frequency = 0;
-    reg[31:0] pulseCount = 0;
+    time tickSecondCounter = `TPS;
+    time ticks = 0;
+    time counter = 0;
+    integer seconds = 0;
+    integer period = 0;
+    integer lastSeconds = 0;
+    integer frequency = 0;
+    integer pulseCount = 0;
     
     reg lastStart = 0;
     
     always @(posedge clk) begin
-        debug2 = !debug2; 
     
         if(!lastStart && start) begin
             ticks <= 0;
             counter <= 0;
             lastSeconds <= -1;
             pulseCount <= 0; 
+            pulse <= 0;
         end
         lastStart = start;
+        
+        if(reset) begin
+            ticks <= 0;
+            counter <= 0;
+            seconds <= 0;
+            period <= 0;
+            lastSeconds <= 0;
+            frequency <= 0;
+            pulseCount <= 0;
+            pulse <= 0;
+            tickSecondCounter <= `TPS;
+        end
     
-       seconds = ticks / `TPS;
-       if(mode == 2'b11) begin
-           if(seconds < 1) frequency = 20;
-           else if(seconds < 2) frequency = 33;
-           else if(seconds < 3) frequency = 66;
-           else if(seconds < 4) frequency = 27;
-           else if(seconds < 5) frequency = 70;
-           else if(seconds < 6) frequency = 30;
-           else if(seconds < 7) frequency = 19;
-           else if(seconds < 8) frequency = 30;
-           else if(seconds < 9) frequency = 33;
-           else if(seconds < 73) frequency = 69;
-           else if(seconds < 79) frequency = 34;
-           else if(seconds < 144) frequency = 124;
-           else frequency = 0;
+       if(!start) period <= `TPS;
+       else if(mode == 2'b11) begin
+           seconds <= ticks / `TPS;
+           if(seconds < 1) period <= `TPS / ((20*2)+1);
+           else if(seconds < 2) period <= `TPS / ((33*2)+1);
+           else if(seconds < 3) period <= `TPS / ((66*2)+1);
+           else if(seconds < 4) period <= `TPS / ((27*2)+1);
+           else if(seconds < 5) period <= `TPS / ((70*2)+1);
+           else if(seconds < 6) period <= `TPS / ((30*2)+1);
+           else if(seconds < 7) period <= `TPS / ((19*2)+1);
+           else if(seconds < 8) period <= `TPS / ((30*2)+1);
+           else if(seconds < 9) period <= `TPS / ((33*2)+1);
+           else if(seconds < 73) period <= `TPS / ((69*2)+1);
+           else if(seconds < 79) period <= `TPS / ((34*2)+1);
+           else if(seconds < 144) period <= `TPS / ((124*2)+1);
+           else period <= `TPS;
        end
        else begin
-           if(mode == 2'b00) frequency = 32;
-           else if(mode == 2'b01) frequency = 64;
-           else frequency = 128;
+           if(mode == 2'b00) period <= `TPS / ((32*2)+1);
+           else if(mode == 2'b01) period <= `TPS / ((64*2)+1);
+           else period <= `TPS / ((128*2)+1);
        end
        
-       if(!start) frequency = 0;
-       
-        period = `TPS / ((frequency*2)+1);
-       
-       if(lastSeconds != seconds) begin
+       if(tickSecondCounter >= `TPS) begin
            //   first pulse of the second, let's force it to low
            pulse <= 0;
            pulseCount <= 0;
-           lastSeconds <= seconds;
            counter <= 0;
+           tickSecondCounter <= 1;
        end
        else if(counter >= period) begin
            counter <= 0;
            pulse <= !pulse;
+           tickSecondCounter <= tickSecondCounter + 1;
        end
-       else counter <= counter + 1;
-       
+       else begin
+           counter <= counter + 1;
+           tickSecondCounter <= tickSecondCounter + 1;
+       end
+              
        ticks <= ticks + 1;
     end
     

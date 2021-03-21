@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Mar 20 22:21:48 2021
+| Date         : Sun Mar 21 18:06:29 2021
 | Host         : Allen-PC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file FitBit_utilization_synth.rpt -pb FitBit_utilization_synth.pb
 | Design       : FitBit
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 2253 |     0 |     20800 | 10.83 |
-|   LUT as Logic          | 2253 |     0 |     20800 | 10.83 |
+| Slice LUTs*             | 2284 |     0 |     20800 | 10.98 |
+|   LUT as Logic          | 2284 |     0 |     20800 | 10.98 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  447 |     0 |     41600 |  1.07 |
-|   Register as Flip Flop |  447 |     0 |     41600 |  1.07 |
+| Slice Registers         |  680 |     0 |     41600 |  1.63 |
+|   Register as Flip Flop |  680 |     0 |     41600 |  1.63 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 35    |          Yes |         Set |            - |
-| 412   |          Yes |       Reset |            - |
+| 12    |          Yes |         Set |            - |
+| 668   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -77,11 +77,12 @@ Table of Contents
 3. DSP
 ------
 
-+-----------+------+-------+-----------+-------+
-| Site Type | Used | Fixed | Available | Util% |
-+-----------+------+-------+-----------+-------+
-| DSPs      |    0 |     0 |        90 |  0.00 |
-+-----------+------+-------+-----------+-------+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| DSPs           |    4 |     0 |        90 |  4.44 |
+|   DSP48E1 only |    4 |       |           |       |
++----------------+------+-------+-----------+-------+
 
 
 4. IO and GT Specific
@@ -90,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   20 |     0 |       106 | 18.87 |
+| Bonded IOB                  |   18 |     0 |       106 | 16.98 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -115,7 +116,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
+| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         5 |  0.00 |
@@ -149,18 +150,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT3     |  745 |                 LUT |
-| LUT6     |  688 |                 LUT |
-| LUT2     |  614 |                 LUT |
-| CARRY4   |  458 |          CarryLogic |
-| FDRE     |  412 |        Flop & Latch |
-| LUT4     |  309 |                 LUT |
-| LUT5     |  218 |                 LUT |
-| LUT1     |   39 |                 LUT |
-| FDSE     |   35 |        Flop & Latch |
-| OBUF     |   15 |                  IO |
+| LUT2     |  851 |                 LUT |
+| FDRE     |  668 |        Flop & Latch |
+| LUT6     |  666 |                 LUT |
+| LUT3     |  641 |                 LUT |
+| CARRY4   |  548 |          CarryLogic |
+| LUT4     |  377 |                 LUT |
+| LUT5     |  156 |                 LUT |
+| LUT1     |   53 |                 LUT |
+| OBUF     |   13 |                  IO |
+| FDSE     |   12 |        Flop & Latch |
 | IBUF     |    5 |                  IO |
-| BUFG     |    2 |               Clock |
+| DSP48E1  |    4 |    Block Arithmetic |
+| BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
 
