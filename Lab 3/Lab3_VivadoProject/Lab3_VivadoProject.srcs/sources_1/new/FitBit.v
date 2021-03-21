@@ -79,34 +79,35 @@ begin
         si = 0;
         disp <= 9999;
     end
-//    else if(delayFlag == 0)begin
-//        if(count > 9999) begin
-//            disp <= 9999;
-//            si = 1;
-//        end
-//        else begin
-//            disp <= count;
-//        end 
-//        needDP <= 0;
-//    end
-//    else if(delayFlag == 1)begin
-//        disp <= fixedM; 
-//        needDP <= 1;
-//    end
-//    else if(delayFlag == 2)begin
-//        disp <= secondsFastPace; //output of speedWalkTime
-//        needDP <= 0;
-//    end
-//    else if(delayFlag == 3)begin
-//        disp <= hiActiv;
-//        needDP <= 0;
-//    end
-//    else begin//should not happen
-//        disp <= disp; 
-//    end
+    else if(delayFlag == 0)begin
+        if(count > 9999) begin
+            disp <= 9999;
+            si = 1;
+        end
+        else begin
+            disp <= count;
+        end 
+        needDP <= 0;
+    end
+    else if(delayFlag == 1)begin
+        disp <= fixedM; 
+        needDP <= 1;
+    end
+    else if(delayFlag == 2)begin
+        disp <= secondsFastPace; //output of speedWalkTime
+        needDP <= 0;
+    end
+    else if(delayFlag == 3)begin
+        disp <= hiActiv;
+        needDP <= 0;
+    end
+    else begin//should not happen
+        disp <= disp; 
+    end
 
-    disp <= secondsFastPace;
-    needDP <= 0;
+//    disp <= secondsFastPace;
+//    disp <= hiActiv;
+//    needDP <= 0;
 
 end
 
