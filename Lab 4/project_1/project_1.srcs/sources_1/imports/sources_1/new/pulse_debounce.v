@@ -43,7 +43,6 @@ endmodule
 module singlePulse(
     input clk,
     input syncPress,
-    input onePulse,
     output reg pulse
     );
 reg cs, ns;
@@ -53,20 +52,22 @@ initial begin
     ns <= 0;
 end  
 
-always @(cs) begin
+always @(cs, syncPress) begin
 case(cs) 
     0: begin
-        if(syncPress) begin
+        if(syncPress == 1) begin
+         
             ns <= 1; 
             pulse <= 1;
         end
         else begin 
+            //should be <= 0; this is for debugging only
             ns <= 0;
             pulse <= 0;
         end
     end
     1: begin
-        if(syncPress) begin
+        if(syncPress == 1) begin
             ns <= 1;
             pulse <= 0;
         end
