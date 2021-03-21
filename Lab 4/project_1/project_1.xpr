@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 3/Lab4/Lab4.xpr">
+<Project Version="7" Minor="54" Path="C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="534546522ea04a31ba3d52f50ade1f29"/>
+    <Option Name="Id" Val="4b39843ac7b0439696232c697589a17a"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -74,43 +74,49 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/Downloads/bcd.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Downloads/bcd.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/sources_1/imports/Downloads/bcd.v"/>
           <Attr Name="ImportTime" Val="1614822430"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Downloads/sevenseg.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Downloads/sevenseg.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v"/>
-          <Attr Name="ImportTime" Val="1616289767"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/sources_1/imports/Downloads/sevenseg.v"/>
+          <Attr Name="ImportTime" Val="1616291825"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/Adder.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Adder.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/sources_1/new/Adder.v"/>
+          <Attr Name="ImportTime" Val="1616291175"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/Decrementer.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/pulse_debounce.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/sources_1/new/pulse_debounce.v"/>
+          <Attr Name="ImportTime" Val="1616291175"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/pulse_debounce.v">
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Decrementer.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/sources_1/new/Decrementer.v"/>
+          <Attr Name="ImportTime" Val="1616291175"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -126,7 +132,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/EE460M-Labs/Lab4.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/constrs_1/imports/EE460M-Labs/Lab4.xdc"/>
           <Attr Name="ImportTime" Val="1616289767"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
