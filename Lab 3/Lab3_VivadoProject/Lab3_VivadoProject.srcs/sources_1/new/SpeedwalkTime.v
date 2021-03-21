@@ -10,17 +10,13 @@ module SpeedwalkTime(
     );
     
    integer pulseCount = 0;
-   integer lastCount = 0;
    integer secondsCount = 0;
    reg[15:0] fastSecondsCount = 0;
    time tickCount = 0;
    
    assign seconds[15:0] = fastSecondsCount[15:0];
-   
-   always @(posedge pulse) begin
-        if(reset) pulseCount <= 0;
-        else pulseCount = pulseCount + 1;
-   end
+    
+   reg lastPulse = 0;
     
    always @(posedge clk) begin
    
@@ -28,15 +24,22 @@ module SpeedwalkTime(
            secondsCount <= 0;
            fastSecondsCount <= 0;
            tickCount <= 0;
-           lastCount <= 0;
+           pulseCount <= 0;
+           lastPulse <= 0;
        end
        else begin
+       
+           if(!lastPulse && pulse) begin
+                pulseCount <= pulseCount + 1;
+           end
+           lastPulse <= pulse;
+           
            if(secondsCount <= 9) begin
                tickCount <= tickCount + 1;
-               if(tickCount-lastCount >= `TPS) begin
+               if(tickCount >= secondsCount * `TPS) begin
                    secondsCount <= secondsCount + 1;
                    if(pulseCount > 32) fastSecondsCount <= fastSecondsCount + 1;
-                   lastCount <= pulseCount;
+                   pulseCount <= 0;
                end
            end
        end

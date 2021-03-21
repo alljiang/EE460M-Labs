@@ -19,9 +19,7 @@ FitBit fb(
     si,
     an,
     seg,
-    dp,
-    debug,
-    debug2
+    dp
 );
 
 initial begin
@@ -29,13 +27,6 @@ initial begin
     rst = 0;
     start = 1;
     mode = 2'b11;
-    #2000000000;
-    #2000000000;
-    #2000000000;
-    #2000000000;
-    #2000000000;
-    #2000000000;
-
 end
 
 endmodule

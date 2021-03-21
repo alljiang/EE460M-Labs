@@ -15,7 +15,6 @@ module HighActivity(
     integer stepCountThisSecond = 0;
     
     assign highActivityTime = totalActivityTime[15:0];
-//    assign highActivityTime = stepCountThisSecond[15:0];
    
     reg lastPulse = 0;
     

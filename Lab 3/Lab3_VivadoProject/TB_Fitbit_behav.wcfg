@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="998830000000fs"></ZoomStartTime>
-      <ZoomEndTime time="1000236000001fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000000fs"></Cursor1Time>
+      <ZoomStartTime time="999767640242fs"></ZoomStartTime>
+      <ZoomEndTime time="1001205640243fs"></ZoomEndTime>
+      <Cursor1Time time="1000007306908fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="227"></NameColumnWidth>
-      <ValueColumnWidth column_width="98"></ValueColumnWidth>
+      <ValueColumnWidth column_width="82"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/TB_Fitbit/CLK" type="logic">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
@@ -67,10 +67,6 @@
       <obj_property name="ObjectShortName">count[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Fitbit/fb/pulse" type="logic">
-      <obj_property name="ElementShortName">pulse</obj_property>
-      <obj_property name="ObjectShortName">pulse</obj_property>
-   </wvobject>
    <wvobject fp_name="/TB_Fitbit/fb/generator/ticks" type="array">
       <obj_property name="ElementShortName">ticks[63:0]</obj_property>
       <obj_property name="ObjectShortName">ticks[63:0]</obj_property>
@@ -85,13 +81,13 @@
       <obj_property name="ObjectShortName">stepCountThisSecond[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Fitbit/fb/disp" type="array">
-      <obj_property name="ElementShortName">disp[15:0]</obj_property>
-      <obj_property name="ObjectShortName">disp[15:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/TB_Fitbit/fb/pulse" type="logic">
+      <obj_property name="ElementShortName">pulse</obj_property>
+      <obj_property name="ObjectShortName">pulse</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Fitbit/debug2" type="logic">
-      <obj_property name="ElementShortName">debug2</obj_property>
-      <obj_property name="ObjectShortName">debug2</obj_property>
+   <wvobject fp_name="/TB_Fitbit/fb/generator/counter" type="array">
+      <obj_property name="ElementShortName">counter[63:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[63:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>
