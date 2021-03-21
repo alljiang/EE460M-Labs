@@ -33,7 +33,12 @@ reg [2:0]delayFlag = 0;
 reg changeDisp = 0;
 always @(posedge CLK) 
 begin
-    if(rst) delayFlag = 0;
+    if(rst) begin
+        delayFlag = 0;
+        delay <= 0;
+        changeDisp <= 0;
+        lastPulse <= 0;
+    end
     if(rst) count <= 0;
     else if(!lastPulse && pulse) count <= count+1;
     lastPulse <= pulse;
