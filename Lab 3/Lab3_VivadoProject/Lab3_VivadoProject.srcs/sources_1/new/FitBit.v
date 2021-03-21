@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define clkDiv (10*00001)
+`define clkDiv (10*000001)
 
 module FitBit(
     input CLK, rst, start,
@@ -79,35 +79,35 @@ begin
         si = 0;
         disp <= 9999;
     end
-    else if(delayFlag == 0)begin
-        if(count > 9999) begin
-            disp <= 9999;
-            si = 1;
-        end
-        else begin
-            disp <= count;
-        end 
-        needDP <= 0;
-    end
-    else if(delayFlag == 1)begin
-        disp <= fixedM; 
-        needDP <= 1;
-    end
-    else if(delayFlag == 2)begin
-        disp <= secondsFastPace; //output of speedWalkTime
-        needDP <= 0;
-    end
-    else if(delayFlag == 3)begin
-        disp <= hiActiv;
-        needDP <= 0;
-    end
-    else begin//should not happen
-        disp <= disp; 
-    end
+//    else if(delayFlag == 0)begin
+//        if(count > 9999) begin
+//            disp <= 9999;
+//            si = 1;
+//        end
+//        else begin
+//            disp <= count;
+//        end 
+//        needDP <= 0;
+//    end
+//    else if(delayFlag == 1)begin
+//        disp <= fixedM; 
+//        needDP <= 1;
+//    end
+//    else if(delayFlag == 2)begin
+//        disp <= secondsFastPace; //output of speedWalkTime
+//        needDP <= 0;
+//    end
+//    else if(delayFlag == 3)begin
+//        disp <= hiActiv;
+//        needDP <= 0;
+//    end
+//    else begin//should not happen
+//        disp <= disp; 
+//    end
 
-//    disp <= secondsFastPace;
+    disp <= secondsFastPace;
 //    disp <= hiActiv;
-//    needDP <= 0;
+    needDP <= 0;
 
 end
 
