@@ -38,26 +38,28 @@ begin
         delay <= 0;
         changeDisp <= 0;
         lastPulse <= 0;
+        count <= 0;
     end
-    if(rst) count <= 0;
-    else if(!lastPulse && pulse) count <= count+1;
-    lastPulse <= pulse;
-
-    if(delay < (2000000000/`clkDiv)-1) begin
-    //2000000000-1
-        delay <= delay+1;
-        changeDisp <= 0;
-    end
-    else begin //delay > 2mil
-        delay <= 0;
-        changeDisp <= 1;
-        if(delayFlag < 3) begin
-            delayFlag = delayFlag+1;
+    else begin
+        if(!lastPulse && pulse) count <= count+1;
+        lastPulse <= pulse;
+    
+        if(delay < (2000000000/`clkDiv)-1) begin
+        //2000000000-1
+            delay <= delay+1;
+            changeDisp <= 0;
         end
-        else  begin//delayFlag >= 3
-            delayFlag =0;
+        else begin //delay > 2mil
+            delay <= 0;
+            changeDisp <= 1;
+            if(delayFlag < 3) begin
+                delayFlag = delayFlag+1;
+            end
+            else  begin//delayFlag >= 3
+                delayFlag =0;
+            end
         end
-    end
+    end    
 end
 
 //fixed point milage
