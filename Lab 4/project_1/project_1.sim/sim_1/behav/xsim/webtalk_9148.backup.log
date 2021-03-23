@@ -2,10 +2,10 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Mar 23 15:54:02 2021
-# Process ID: 20924
+# Start of session at: Sun Mar 21 18:20:53 2021
+# Process ID: 9148
 # Current directory: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/TB_decrementer_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/TB_adder_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
@@ -14,4 +14,4 @@ invalid command name "%"
     while executing
 "% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
     (file "C:/Users/xchen/Documents/EE460M" line 1)
-INFO: [Common 17-206] Exiting Webtalk at Tue Mar 23 15:54:03 2021...
+INFO: [Common 17-206] Exiting Webtalk at Sun Mar 21 18:20:53 2021...

@@ -7,7 +7,6 @@ module sevenseg(
   input overflow,
   output [3:0] an,
   output [6:0] seg,
-  input needDP,
   output reg dp = 1
 ); 
 
@@ -30,6 +29,7 @@ reg [3:0] an_buf = 0;
 assign an = an_buf;
 always @(posedge slow_clk) begin
     current <= next;
+    
     if(reset) begin // Synchronous reset
         bcdin = sw[3:0];// Set outputs
         an_buf = 4'b1110;
@@ -47,8 +47,7 @@ always @(posedge slow_clk) begin
             bcdin = (sw / 10) % 10;
             an_buf = 4'b1101;
             next = 2;
-            if(needDP) dp = 0;
-            else dp = 1;
+            dp = 1;
             end
         2:begin
             bcdin = (sw / 100) % 10;

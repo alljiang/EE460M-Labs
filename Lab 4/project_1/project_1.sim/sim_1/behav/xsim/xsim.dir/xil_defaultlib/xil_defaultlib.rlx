@@ -4,6 +4,8 @@ Nov 18 2020
 09:47:47
 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.srcs/sim_1/new/TB_adder.v,1616369232,verilog,,,,TB_adder,,,,,,,,
+C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.srcs/sim_1/new/TB_decrementer.v,1616533620,verilog,,,,TB_decrementer,,,,,,,,
 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.srcs/sim_1/new/TB_singlePulseDebounce.v,1616359245,verilog,,,,TB_singlePulseDebounce,,,,,,,,
 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/Adder.v,1616368908,verilog,,C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.srcs/sim_1/new/TB_adder.v,,Adder,,,,,,,,
+C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/Decrementer.v,1616533869,verilog,,C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.srcs/sim_1/new/TB_decrementer.v,,Decrementer;clkDiv,,,,,,,,
 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/pulse_debounce.v,1616359178,verilog,,C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 4/project_1/project_1.srcs/sim_1/new/TB_singlePulseDebounce.v,,DFF;debounce;singlePulse,,,,,,,,

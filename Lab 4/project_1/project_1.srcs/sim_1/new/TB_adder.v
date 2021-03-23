@@ -27,12 +27,16 @@ module TB_adder();
     reg btnD = 0; 
     reg btnR = 0;
     reg btnL = 0;
-    reg [14:0] regVal = 0;
-    wire[14:0] toDecr;
+    reg [14:0] regVal;
+    wire [14:0] toDecr;
+    
+    wire flash2s;
+    wire flash1s;
 
 always #1 clk = ~clk;
 
 Adder add(clk, btnU, btnD, btnR, btnL, regVal, toDecr);
+Decrementer D(clk, toDecr, regVal, flash2s, flash1s);
 
 initial begin
     regVal = 9000;
