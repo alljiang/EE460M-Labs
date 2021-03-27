@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1616797638">
+  <File Type="ROUTE-PWR" Name="Decrementer_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Decrementer.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Decrementer_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Decrementer_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="Decrementer.msk"/>
+  <File Type="ROUTE-CLK" Name="Decrementer_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Decrementer.vdi"/>
+  <File Type="BG-BIT" Name="Decrementer.bit"/>
+  <File Type="BG-DRC" Name="Decrementer.drc"/>
+  <File Type="BG-BGN" Name="Decrementer.bgn"/>
+  <File Type="BG-BIN" Name="Decrementer.bin"/>
+  <File Type="BITSTR-RBT" Name="Decrementer.rbt"/>
+  <File Type="BITSTR-NKY" Name="Decrementer.nky"/>
+  <File Type="BITSTR-BMM" Name="Decrementer_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Decrementer_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Decrementer.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Decrementer_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="Decrementer.sysdef"/>
+  <File Type="ROUTE-DRC-RPX" Name="Decrementer_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Decrementer.ltx"/>
+  <File Type="RCFI_FILE" Name="Decrementer.rcfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="Decrementer_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Decrementer.hwdef"/>
+  <File Type="PLACE-IO" Name="Decrementer_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Decrementer_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Decrementer_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Decrementer_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Decrementer_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="Decrementer_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Decrementer_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Decrementer_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Decrementer_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Decrementer_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="Decrementer_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Decrementer_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Decrementer_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Decrementer_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Decrementer_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Decrementer_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Decrementer_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Decrementer_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Decrementer_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="Decrementer_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Decrementer_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Decrementer_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Decrementer_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Decrementer_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Decrementer_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Decrementer_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Decrementer_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="Decrementer.pdi"/>
+  <File Type="CFI_FILE" Name="Decrementer.cfi"/>
+  <File Type="RNPI_FILE" Name="Decrementer.rnpi"/>
+  <File Type="NPI_FILE" Name="Decrementer.npi"/>
+  <File Type="RBD_FILE" Name="Decrementer.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Decrementer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/sources_1/new/Decrementer.v"/>
+        <Attr Name="ImportTime" Val="1616291175"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Adder.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/sources_1/new/Adder.v"/>
+        <Attr Name="ImportTime" Val="1616291175"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/pulse_debounce.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/sources_1/new/pulse_debounce.v"/>
+        <Attr Name="ImportTime" Val="1616291175"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Downloads/bcd.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/sources_1/imports/Downloads/bcd.v"/>
+        <Attr Name="ImportTime" Val="1614822430"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Downloads/sevenseg.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/sources_1/imports/Downloads/sevenseg.v"/>
+        <Attr Name="ImportTime" Val="1616291825"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Decrementer"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/EE460M-Labs/Lab4.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab4/Lab4.srcs/constrs_1/imports/EE460M-Labs/Lab4.xdc"/>
+        <Attr Name="ImportTime" Val="1616289767"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

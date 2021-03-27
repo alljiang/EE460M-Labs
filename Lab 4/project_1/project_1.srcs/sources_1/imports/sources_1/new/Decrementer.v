@@ -1,32 +1,16 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 03/20/2021 08:46:15 PM
-// Design Name: 
-// Module Name: Decrementer 
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-`define DELAY1s (1000000000) //one second delay
-`define DELAY2s (2000000000) //2 second delay
+
+`define clkdiv 100000
+
+`define DELAY1s (50000000 / `clkdiv) //one second delay
+`define DELAY2s (100000000 / `clkdiv) //2 second delay
 
 module clkDiv(
     input clk, 
     output reg slowClk
     );
     
-reg [31:0]clkBuf = 0;
+time clkBuf = 0;
 
 //delay for slowClk period 
 always @(posedge clk) 
@@ -44,8 +28,8 @@ endmodule
 
 module Decrementer(
     input clk,
-    input [14:0]valReg,
-    output reg[14:0] postVal,
+    input [15:0] valReg,
+    output reg[15:0] postVal,
     output reg flash2s = 0,
     output reg flash1s = 0
     );
