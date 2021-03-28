@@ -2,3 +2,6 @@ Running: xsim.dir/TB_meter_behav/xsimk.exe -simmode gui -wdb TB_meter_behav.wdb 
 Design successfully loaded
 Design Loading Memory Usage: 5396 KB (Peak: 5396 KB)
 Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 9784 KB (Peak: 9784 KB)
+Simulation CPU Usage: 124 ms
