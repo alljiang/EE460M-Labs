@@ -4,20 +4,21 @@ Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4b39843ac7
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'reset' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/new/Meter.v:23]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'reset' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/new/Meter.v:37]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.Adder
 Compiling module xil_defaultlib.clkDiv
+Compiling module xil_defaultlib.clkDiv2
 Compiling module xil_defaultlib.Decrementer
-Compiling module xil_defaultlib.bcd
-Compiling module xil_defaultlib.ssclkdiv
-Compiling module xil_defaultlib.sevenseg
 Compiling module xil_defaultlib.DFF
 Compiling module xil_defaultlib.debounce
 Compiling module xil_defaultlib.singlePulse
+Compiling module xil_defaultlib.bcd
+Compiling module xil_defaultlib.ssclkdiv
+Compiling module xil_defaultlib.sevenseg
 Compiling module xil_defaultlib.Meter
 Compiling module xil_defaultlib.TB_meter
 Compiling module xil_defaultlib.glbl

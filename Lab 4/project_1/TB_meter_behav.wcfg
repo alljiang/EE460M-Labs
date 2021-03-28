@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="200000001000001fs"></ZoomEndTime>
-      <Cursor1Time time="156968877645467fs"></Cursor1Time>
+      <ZoomEndTime time="149400000001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="227"></NameColumnWidth>
-      <ValueColumnWidth column_width="62"></ValueColumnWidth>
+      <NameColumnWidth column_width="223"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="12" />
+   <WVObjectSize size="17" />
    <wvobject fp_name="/TB_meter/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -65,8 +65,28 @@
       <obj_property name="ElementShortName">clk_1s</obj_property>
       <obj_property name="ObjectShortName">clk_1s</obj_property>
    </wvobject>
+   <wvobject fp_name="/TB_meter/m/lastclk_1s" type="logic">
+      <obj_property name="ElementShortName">lastclk_1s</obj_property>
+      <obj_property name="ObjectShortName">lastclk_1s</obj_property>
+   </wvobject>
    <wvobject fp_name="/TB_meter/m/decrementerOutput" type="array">
       <obj_property name="ElementShortName">decrementerOutput[15:0]</obj_property>
       <obj_property name="ObjectShortName">decrementerOutput[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_meter/m/clk1s/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_meter/m/clk1s/slowClk" type="logic">
+      <obj_property name="ElementShortName">slowClk</obj_property>
+      <obj_property name="ObjectShortName">slowClk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_meter/m/flash2s" type="logic">
+      <obj_property name="ElementShortName">flash2s</obj_property>
+      <obj_property name="ObjectShortName">flash2s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_meter/m/flash1s" type="logic">
+      <obj_property name="ElementShortName">flash1s</obj_property>
+      <obj_property name="ObjectShortName">flash1s</obj_property>
    </wvobject>
 </wave_config>

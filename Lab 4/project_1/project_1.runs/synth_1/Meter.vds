@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Mar 28 03:02:10 2021
-# Process ID: 15212
+# Start of session at: Sun Mar 28 03:54:38 2021
+# Process ID: 28720
 # Current directory: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log Meter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Meter.tcl
 # Log file: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.runs/synth_1/Meter.vds
@@ -17,4 +17,247 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26984
+INFO: [Synth 8-7075] Helper process launched with PID 132
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1007.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Meter' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/new/Meter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/Adder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (1#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/Adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clkDiv' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/Decrementer.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'clkDiv' (2#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/Decrementer.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clkDiv05' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/Decrementer.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'clkDiv05' (3#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/Decrementer.v:28]
+INFO: [Synth 8-6157] synthesizing module 'Decrementer' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/Decrementer.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'Decrementer' (4#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/Decrementer.v:48]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/pulse_debounce.v:13]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/pulse_debounce.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (5#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/pulse_debounce.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (6#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/pulse_debounce.v:13]
+INFO: [Synth 8-6157] synthesizing module 'singlePulse' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/pulse_debounce.v:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/pulse_debounce.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'singlePulse' (7#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/pulse_debounce.v:25]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/imports/Downloads/sevenseg.v:20]
+INFO: [Synth 8-6157] synthesizing module 'bcd' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/imports/Downloads/bcd.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/imports/Downloads/bcd.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'bcd' (8#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/imports/Downloads/bcd.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ssclkdiv' [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/imports/Downloads/sevenseg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ssclkdiv' (9#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/imports/Downloads/sevenseg.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/imports/Downloads/sevenseg.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (10#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/imports/Downloads/sevenseg.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'Meter' (11#1) [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/new/Meter.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1007.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1007.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1007.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1007.480 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/constrs_1/imports/EE460M-Labs/Lab4.xdc]
+Finished Parsing XDC File [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/constrs_1/imports/EE460M-Labs/Lab4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/constrs_1/imports/EE460M-Labs/Lab4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Meter_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Meter_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1007.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1007.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1007.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1007.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1007.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_reg' in module 'sevenseg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                 iSTATE1 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_reg' using encoding 'sequential' in module 'sevenseg'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1007.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 3     
+	               11 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 3     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 5     
+	   7 Input   15 Bit        Muxes := 1     
+	   3 Input   14 Bit        Muxes := 1     
+	  17 Input    7 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1020.625 ; gain = 13.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1020.973 ; gain = 13.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1128.836 ; gain = 121.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1138.867 ; gain = 131.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1138.867 ; gain = 131.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1138.867 ; gain = 131.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1138.867 ; gain = 131.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1138.867 ; gain = 131.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1138.867 ; gain = 131.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1138.867 ; gain = 131.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    67|
+|3     |LUT1   |    40|
+|4     |LUT2   |    85|
+|5     |LUT3   |    64|
+|6     |LUT4   |    67|
+|7     |LUT5   |    55|
+|8     |LUT6   |   140|
+|9     |FDRE   |   129|
+|10    |FDSE   |    12|
+|11    |IBUF   |     7|
+|12    |OBUF   |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1138.867 ; gain = 131.387
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:55 . Memory (MB): peak = 1138.867 ; gain = 131.387
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1138.867 ; gain = 131.387
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1138.867 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 67 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1138.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1138.867 ; gain = 131.387
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.runs/synth_1/Meter.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Meter_utilization_synth.rpt -pb Meter_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 28 03:55:49 2021...

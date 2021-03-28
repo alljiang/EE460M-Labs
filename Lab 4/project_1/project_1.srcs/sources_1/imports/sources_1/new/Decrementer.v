@@ -4,7 +4,7 @@
 `define clkdiv 1
 
 `define DELAY1s (50000000 / `clkdiv) //one second delay
-`define DELAY2s (100000000 / `clkdiv) //2 second delay
+`define DELAY05s (25000000 / `clkdiv) //2 second delay
 
 module clkDiv(
     input clk, 
@@ -25,6 +25,24 @@ begin
 end
 endmodule
 
+module clkDiv05(
+    input clk, 
+    output reg slowClk = 0
+    );
+    
+time clkBuf = 0;
+
+//delay for slowClk period 
+always @(posedge clk) 
+begin
+    if(clkBuf < `DELAY05s -1)
+        clkBuf = clkBuf + 1;
+    else begin
+        clkBuf = 0;
+        slowClk = ~slowClk;
+    end
+end
+endmodule
 
 
 module Decrementer(
