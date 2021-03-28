@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Decrementer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Decrementer.tcl
+EAStep vivado -log Meter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Meter.tcl

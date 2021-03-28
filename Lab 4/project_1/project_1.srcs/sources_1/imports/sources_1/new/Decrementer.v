@@ -1,13 +1,14 @@
 `timescale 1ns / 1ps
 
-`define clkdiv 100000
+//`define clkdiv 100000
+`define clkdiv 1
 
 `define DELAY1s (50000000 / `clkdiv) //one second delay
 `define DELAY2s (100000000 / `clkdiv) //2 second delay
 
 module clkDiv(
     input clk, 
-    output reg slowClk
+    output reg slowClk = 0
     );
     
 time clkBuf = 0;
@@ -29,7 +30,7 @@ endmodule
 module Decrementer(
     input clk,
     input [15:0] valReg,
-    output reg[15:0] postVal,
+    output reg[15:0] postVal = 0,
     output reg flash2s = 0,
     output reg flash1s = 0
     );

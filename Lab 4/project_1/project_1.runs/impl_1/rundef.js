@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log Decrementer.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Decrementer.tcl -notrace" );
+         "-log Meter.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Meter.tcl -notrace" );
 
 
 

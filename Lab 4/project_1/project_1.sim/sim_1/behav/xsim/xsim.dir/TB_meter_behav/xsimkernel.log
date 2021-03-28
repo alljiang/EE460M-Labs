@@ -1,4 +1,4 @@
-Running: xsim.dir/TB_meter_behav/xsimk.exe -simmode gui -wdb TB_meter_behav.wdb -simrunnum 0 -socket 60850
+Running: xsim.dir/TB_meter_behav/xsimk.exe -simmode gui -wdb TB_meter_behav.wdb -simrunnum 0 -socket 50109
 Design successfully loaded
-Design Loading Memory Usage: 5404 KB (Peak: 5404 KB)
-Design Loading CPU Usage: 62 ms
+Design Loading Memory Usage: 5408 KB (Peak: 5408 KB)
+Design Loading CPU Usage: 15 ms

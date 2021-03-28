@@ -4,7 +4,7 @@ module Adder(
     input clk,
     input btnU, btnD, btnR, btnL,
     input [15:0] regVal,
-    output reg[15:0] toDecr
+    output reg[15:0] toDecr = 0
     );
 reg [14:0] valBuf; 
 
@@ -52,7 +52,7 @@ begin
         end
     end
     else begin
-        toDecr = valBuf;
+        toDecr = 0;
     end
 end
     

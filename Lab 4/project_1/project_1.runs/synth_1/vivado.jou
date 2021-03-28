@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Mar 26 17:27:24 2021
-# Process ID: 27028
+# Start of session at: Sun Mar 28 03:02:10 2021
+# Process ID: 15212
 # Current directory: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.runs/synth_1
-# Command line: vivado.exe -log Decrementer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Decrementer.tcl
-# Log file: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.runs/synth_1/Decrementer.vds
+# Command line: vivado.exe -log Meter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Meter.tcl
+# Log file: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.runs/synth_1/Meter.vds
 # Journal file: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source Decrementer.tcl -notrace
+source Meter.tcl -notrace
