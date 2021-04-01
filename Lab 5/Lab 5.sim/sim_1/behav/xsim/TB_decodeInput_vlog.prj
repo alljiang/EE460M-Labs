@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab 5.srcs/sources_1/new/Decode_Input.v" \
+"../../../../Lab 5.srcs/sources_1/imports/new/pulse_debounce.v" \
+"../../../../Lab 5.srcs/sim_1/new/TB_decodeInput.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 5/Lab 5.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 5/Lab 5.srcs/sim_1/new/TB_decodeInput.v,1617241015,verilog,,,,TB_decodeInput,,,,,,,,
+C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/imports/Downloads/bcd.v,1617237213,verilog,,C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/imports/Downloads/clkdiv.v,,bcd,,,,,,,,
+C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/imports/Downloads/clkdiv.v,1617237213,verilog,,C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/imports/Downloads/sevenseg.v,,clkdiv,,,,,,,,
+C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/imports/Downloads/sevenseg.v,1617237213,verilog,,,,sevenseg,,,,,,,,
+C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/imports/new/pulse_debounce.v,1617237213,verilog,,C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 5/Lab 5.srcs/sim_1/new/TB_decodeInput.v,,DFF;debounce;singlePulse,,,,,,,,
+C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/Decode_Input.v,1617240720,verilog,,C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/imports/new/pulse_debounce.v,,Decode_Input,,,,,,,,
