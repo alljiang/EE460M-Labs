@@ -21,7 +21,15 @@
 
 
 module Decode_Input(
-
+    input[3:0] btns,
+    output reg pop,
+    output reg push,
+    output reg subtract,
+    output reg add,
+    output reg clr,
+    output reg top,
+    output reg dec_addr,
+    output reg inc_addr
     );
     
 endmodule
