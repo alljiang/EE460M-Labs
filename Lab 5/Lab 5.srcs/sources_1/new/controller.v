@@ -2,8 +2,8 @@
 module controller(clk, cs, we, address, data_in, data_out, btns, swtchs, leds, segs,an);
 
     input clk;
-    output cs;
-    output we;
+    output cs;  //enables write command as well
+    output we;  //write enable
     output[6:0] address;
     input[7:0] data_in;
     output[7:0] data_out;
