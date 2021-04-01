@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 31 19:24:22 2021
+# Process ID: 22724
+# Current directory: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16720 C:\Users\Allen\Documents\GitHub\EE460M-Labs\Lab 5\Lab 5.xpr
+# Log file: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/vivado.log
+# Journal file: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.xpr}
+import_files -norecurse {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/clkdiv.v} {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v} {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v}}
+update_compile_order -fileset sources_1
+import_files -norecurse {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/pulse_debounce.v}}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new
+file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new
+file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new
+file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new
+file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new
+file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new
+file mkdir {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new}
+close [ open {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/top.v} w ]
+add_files {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/top.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/controller.v} w ]
+add_files {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/controller.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/memory.v} w ]
+add_files {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/memory.v}}
+update_compile_order -fileset sources_1

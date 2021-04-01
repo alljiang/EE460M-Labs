@@ -1,0 +1,341 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 22724
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Mar 31 19:24:44 CDT 2021
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Allen
+User home directory: C:/Users/Allen
+User working directory: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Allen/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Allen/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Allen/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/vivado.log
+Vivado journal file location: 	C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/vivado.jou
+Engine tmp dir: 	C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/.Xil/Vivado-22724-Allen-PC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,017 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1362 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Allen\Documents\GitHub\EE460M-Labs\Lab 5\Lab 5.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab5' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 92 MB (+94473kb) [00:00:16]
+// [Engine Memory]: 1,017 MB (+915339kb) [00:00:16]
+// [GUI Memory]: 113 MB (+16624kb) [00:00:17]
+// [GUI Memory]: 119 MB (+243kb) [00:00:20]
+// WARNING: HEventQueue.dispatchEvent() is taking  5008 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,017 MB. GUI used memory: 61 MB. Current time: 3/31/21, 7:24:50 PM CDT
+// Project name: Lab 5; location: C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1007.664 ; gain = 0.000 
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Elapsed time: 149 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // D
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // E
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ak
+// Elapsed time: 17 seconds
+String[] filenames31467 = {"C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v", "C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/clkdiv.v", "C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 27 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 138 MB (+13331kb) [00:03:21]
+// Tcl Message: import_files -norecurse {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/clkdiv.v} {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/bcd.v} {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 3/Lab3_VivadoProject/Lab3_VivadoProject.srcs/sources_1/imports/Downloads/sevenseg.v}} 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // E
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ak
+// Elapsed time: 33 seconds
+setFileChooser("C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/pulse_debounce.v");
+// Elapsed time: 15 seconds
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 55 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 4/project_1/project_1.srcs/sources_1/imports/sources_1/new/pulse_debounce.v}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // E
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ak
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // aa
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "top.v"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F
+// Tcl Message: file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab": file already exists 
+// Tcl Command: 'file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab": file already exists 
+// Tcl Command: 'file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new'
+// Tcl Command: 'file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new'
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 24 seconds
+// Tcl Command: 'file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab": file already exists 
+// Tcl Message: file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab": file already exists 
+dismissDialog("Add Sources"); // c
+// Tcl Message: file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab": file already exists 
+// Tcl Command: 'file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new 
+// Tcl Message: can't create directory "C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab": file already exists 
+// Tcl Message: file mkdir {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new} 
+// Tcl Message: close [ open {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/top.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/top.v}} 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // D
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("top.v", 91, 129); // bP
+typeControlKey((HResource) null, "top.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("top.v", 122, 433); // bP
+typeControlKey((HResource) null, "top.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("top.v", 91, 439); // bP
+typeControlKey((HResource) null, "top.v", 'v'); // bP
+selectCodeEditor("top.v", 209, 17); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 4, false); // D
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // aa
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "controller"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/controller.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/controller.v}} 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce (pulse_debounce.v)]", 2); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce (pulse_debounce.v)]", 2); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sevenseg (sevenseg.v)]", 1); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sevenseg (sevenseg.v)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), ctrl : controller (controller.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), ctrl : controller (controller.v)]", 4, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("controller.v", 82, 119); // bP
+typeControlKey((HResource) null, "controller.v", 'v'); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("controller.v", 152, 444); // bP
+typeControlKey((HResource) null, "controller.v", 'v'); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("controller.v", 318, 221); // bP
+selectCodeEditor("controller.v", 321, 152); // bP
+selectCodeEditor("controller.v", 323, 234); // bP
+selectCodeEditor("controller.v", 321, 216); // bP
+selectCodeEditor("controller.v", 300, 189); // bP
+selectCodeEditor("controller.v", 684, 27); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("controller.v", 164, 228); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mem : xil_defaultlib.memory]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3, true); // D - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // m
+selectCodeEditor("top.v", 1, 44); // bP
+selectCodeEditor("top.v", 461, 129); // bP
+selectCodeEditor("top.v", 415, 44); // bP
+selectCodeEditor("top.v", 406, 26); // bP
+selectCodeEditor("top.v", 407, 19); // bP
+selectCodeEditor("top.v", 406, 17); // bP
+selectCodeEditor("top.v", 406, 5); // bP
+selectCodeEditor("top.v", 226, 148); // bP
+selectCodeEditor("top.v", 214, 162); // bP
+selectCodeEditor("top.v", 187, 181); // bP
+selectCodeEditor("top.v", 187, 164); // bP
+selectCodeEditor("top.v", 268, 305); // bP
+selectCodeEditor("top.v", 436, 398); // bP
+selectCodeEditor("top.v", 498, 425); // bP
+selectCodeEditor("top.v", 499, 410); // bP
+selectCodeEditor("top.v", 499, 405); // bP
+selectCodeEditor("top.v", 441, 473); // bP
+selectCodeEditor("top.v", 464, 501); // bP
+selectCodeEditor("top.v", 464, 407); // bP
+selectCodeEditor("top.v", 328, 279); // bP
+selectCodeEditor("top.v", 301, 297); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // E
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ak
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // aa
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "memory"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 19 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open {C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/memory.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Allen/Documents/GitHub/EE460M-Labs/Lab 5/Lab 5.srcs/sources_1/new/memory.v}} 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mem : xil_defaultlib.memory]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mem : xil_defaultlib.memory]", 5, false, false, false, false, false, true); // D - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mem : memory (memory.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mem : memory (memory.v)]", 5, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("memory.v", 189, 128); // bP
+selectCodeEditor("memory.v", 154, 456); // bP
+typeControlKey((HResource) null, "memory.v", 'v'); // bP
+selectCodeEditor("memory.v", 4, 57); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
