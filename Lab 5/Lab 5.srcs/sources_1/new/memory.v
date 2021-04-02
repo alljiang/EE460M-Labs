@@ -13,8 +13,7 @@ module memory(clock, cs, we, address, data_in, data_out);
     reg[7:0] RAM[0:127];
     
     always @ (negedge clock) begin
-        if((we == 1) && (cs == 1))
-        RAM[address] <= data_in[7:0];
+        if((we == 1) && (cs == 1)) RAM[address] <= data_in[7:0];
         data_out <= RAM[address];
     end
     
