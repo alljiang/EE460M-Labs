@@ -16,18 +16,29 @@ module controller(clk, cs, we, address, data_in, data_out, btns, swtchs, leds, s
     //WRITE THE FUNCTION OF THE CONTROLLER
     
     wire pop, push, subtract, add, clear, top, dec_addr, inc_addr;
+    Decode_Input DI(clk, btns, pop, push, subtract,add, clear, top, dec_addr, inc_addr);
     
     reg [6:0] DAR = 0;  //  display address register
-    reg [7:0] DVR = 0;  //  display value register
+    reg [7:0] DVR = 0;  //  display value registerZ
     
+    reg nextCycle_startWrite = 0;
     reg nextCycle_write = 0;
     reg nextCycle_endWrite = 0;
     
     reg adding = 0;
+    integer addingState = 0;
     reg subtracting = 0;
     integer subtractingState = 0;
     
+    integer operand1 = 0;
+    integer operand2 = 0;
+    
     always @(posedge clk) begin
+        if(nextCycle_startWrite) begin
+            nextCycle_startWrite = 0;
+            nextCycle_write = 1;
+            we = 1;
+        end
         if(nextCycle_write) begin
             nextCycle_write = 0;
             nextCycle_endWrite = 1;
@@ -35,10 +46,39 @@ module controller(clk, cs, we, address, data_in, data_out, btns, swtchs, leds, s
         else if(nextCycle_endWrite) begin
             we = 0;
             address = address - 1;
+            nextCycle_endWrite = 0;
         end
         else if(adding) begin
+            if(addingState == 0) begin
+                addingState = 1;
+                operand1 = data_in;
+                address = address + 1;
+            end
+            else if(addingState == 1) begin
+                addingState = 2;
+                operand2 = data_in;
+            end
+            else if(addingState == 2) begin
+                addingState = 3;
+                data_out = operand2 + operand1;
+                nextCycle_startWrite = 1;
+            end
         end
         else if(subtracting) begin
+            if(subtractingState == 0) begin
+                subtractingState = 1;
+                operand1 = data_in;
+                address = address + 1;
+            end
+            else if(subtractingState == 1) begin
+                subtractingState = 2;
+                operand2 = data_in;
+            end
+            else if(subtractingState == 2) begin
+                subtractingState = 0;
+                data_out = operand2 - operand1;
+                nextCycle_startWrite = 1;
+            end
         end
         else begin
             if(pop) begin
@@ -48,15 +88,23 @@ module controller(clk, cs, we, address, data_in, data_out, btns, swtchs, leds, s
             end
             else if(push) begin
                 if(address > 0) begin
-                    nextCycle_write = 1;
+                    nextCycle_startWrite = 1;
                     data_out = swtchs;
                 end
             end
             else if(subtract) begin
-                subtracting = 1;
+                if(address <= 7'hFD) begin
+                    subtracting = 1;
+                    subtractingState = 0;
+                    address = address + 1;  //  start pop 
+                end
             end 
             else if(add) begin
-                adding = 1;
+                if(address <= 7'hFD) begin
+                    adding = 1;
+                    addingState = 0;
+                    address = address + 1;  //  start pop 
+                end
             end
             else if(clear) begin
             end

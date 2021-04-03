@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_controller_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_controller" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="280001fs"></ZoomEndTime>
+      <Cursor1Time time="200000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="219"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_controller/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/btns" type="array">
+      <obj_property name="ElementShortName">btns[3:0]</obj_property>
+      <obj_property name="ObjectShortName">btns[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/swtchs" type="array">
+      <obj_property name="ElementShortName">swtchs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">swtchs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/leds" type="array">
+      <obj_property name="ElementShortName">leds[7:0]</obj_property>
+      <obj_property name="ObjectShortName">leds[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/segs" type="array">
+      <obj_property name="ElementShortName">segs[6:0]</obj_property>
+      <obj_property name="ObjectShortName">segs[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/an" type="array">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/mem/RAM[123]" type="array">
+      <obj_property name="ElementShortName">[123][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[123][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/mem/RAM[124]" type="array">
+      <obj_property name="ElementShortName">[124][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[124][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/mem/RAM[125]" type="array">
+      <obj_property name="ElementShortName">[125][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[125][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/mem/RAM[126]" type="array">
+      <obj_property name="ElementShortName">[126][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[126][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/mem/RAM[127]" type="array">
+      <obj_property name="ElementShortName">[127][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[127][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/addr" type="array">
+      <obj_property name="ElementShortName">addr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/ctrl/subtract" type="logic">
+      <obj_property name="ElementShortName">subtract</obj_property>
+      <obj_property name="ObjectShortName">subtract</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/ctrl/subtractingState" type="array">
+      <obj_property name="ElementShortName">subtractingState[31:0]</obj_property>
+      <obj_property name="ObjectShortName">subtractingState[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
