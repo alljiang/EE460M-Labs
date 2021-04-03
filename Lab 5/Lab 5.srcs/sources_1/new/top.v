@@ -23,6 +23,8 @@ module top(clk, btns, swtchs, leds, segs, an);
     assign data_bus = 1; // 2nd driver of the data bus -- tri state switches
     // function of we and data_out_mem
     
+    
+    // we - write enable, cs - chip select, only necessary for multiple memory modules
     controller ctrl(clk, cs, we, addr, data_bus, data_out_ctrl,
     btns, swtchs, leds, segs, an);
     memory mem(clk, cs, we, addr, data_bus, data_out_mem);
