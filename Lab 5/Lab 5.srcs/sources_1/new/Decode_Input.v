@@ -35,10 +35,7 @@ module Decode_Input(
 
 wire[3:0] btnPulse;
 
-singlePulse btn3(
-clk, btns[3], btnPulse[3]
-);
-singlePulse btn2(clk, btns[2], btnPulse[2]);
+assign btnPulse[3:2] = { btns[3], btns[2] };
 singlePulse btn1(clk, btns[1], btnPulse[1]);
 singlePulse btn0(clk, btns[0], btnPulse[0]);
 

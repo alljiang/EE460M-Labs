@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="280001fs"></ZoomEndTime>
-      <Cursor1Time time="200000fs"></Cursor1Time>
+      <ZoomEndTime time="76301fs"></ZoomEndTime>
+      <Cursor1Time time="10100fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="219"></NameColumnWidth>
+      <NameColumnWidth column_width="207"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="23" />
    <wvobject fp_name="/tb_controller/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -72,6 +72,18 @@
       <obj_property name="ElementShortName">addr[6:0]</obj_property>
       <obj_property name="ObjectShortName">addr[6:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/ctrl/SPR" type="array">
+      <obj_property name="ElementShortName">SPR[6:0]</obj_property>
+      <obj_property name="ObjectShortName">SPR[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/ctrl/DI/push" type="logic">
+      <obj_property name="ElementShortName">push</obj_property>
+      <obj_property name="ObjectShortName">push</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/ctrl/DI/pop" type="logic">
+      <obj_property name="ElementShortName">pop</obj_property>
+      <obj_property name="ObjectShortName">pop</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_controller/toppp/ctrl/subtract" type="logic">
       <obj_property name="ElementShortName">subtract</obj_property>
       <obj_property name="ObjectShortName">subtract</obj_property>
@@ -80,5 +92,25 @@
       <obj_property name="ElementShortName">subtractingState[31:0]</obj_property>
       <obj_property name="ObjectShortName">subtractingState[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/ctrl/DAR" type="array">
+      <obj_property name="ElementShortName">DAR[6:0]</obj_property>
+      <obj_property name="ObjectShortName">DAR[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/ctrl/DVR" type="array">
+      <obj_property name="ElementShortName">DVR[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DVR[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/ctrl/nextCycle_startWrite" type="logic">
+      <obj_property name="ElementShortName">nextCycle_startWrite</obj_property>
+      <obj_property name="ObjectShortName">nextCycle_startWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/ctrl/nextCycle_write" type="logic">
+      <obj_property name="ElementShortName">nextCycle_write</obj_property>
+      <obj_property name="ObjectShortName">nextCycle_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_controller/toppp/ctrl/nextCycle_endWrite" type="logic">
+      <obj_property name="ElementShortName">nextCycle_endWrite</obj_property>
+      <obj_property name="ObjectShortName">nextCycle_endWrite</obj_property>
    </wvobject>
 </wave_config>

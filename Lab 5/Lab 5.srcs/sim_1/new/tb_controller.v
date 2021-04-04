@@ -27,7 +27,7 @@ initial begin
     #20;
     btns = 4'b0000;
     #20;
-    btns = 4'b0110;
+    btns = 4'b0101;
     #20;
     btns = 4'b0000;
     
