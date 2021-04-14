@@ -21,6 +21,15 @@
 
 
 module Float_Mult(
-
+    input CLK,
+    input St,
+    input [7:0]A,
+    input [7:0]B,
+    output ov,
+    output un,
+    output reg[7:0] prod,
+    output done
     );
+    
+    
 endmodule
