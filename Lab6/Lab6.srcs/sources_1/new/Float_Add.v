@@ -21,6 +21,16 @@
 
 
 module Float_Add(
-
+    input CLK,
+    input St,
+    input [7:0] A,
+    input [7:0] B,
+    output done,
+    output ov,
+    output un,
+    output [7:0] Sum
     );
+
+
+
 endmodule
