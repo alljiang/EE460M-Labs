@@ -33,6 +33,9 @@ module Float_Mult(
 reg [9:0] prodBuf;
 reg [3:0] expBuf;
 reg ov;
+reg norm;
+wire sign;
+assign sign = A[7]^B[7];
 
 reg [4:0] AFrac;
 reg [2:0] AExp;
@@ -57,22 +60,22 @@ always @(posedge CLK) begin
                 NS <= 1;
                 AFrac <= {1'b1, A[3:0]};
                 BFrac <= {1'b1, B[3:0]};
-                AExp <= A[6:4];
-                BExp <= B[6:4];
+                AExp <= A[6:4] - 4; //exp offset = 4
+                BExp <= B[6:4] - 4;
             end
             else NS <= 0;
         end
         1: begin
             done <= 0;
             prodBuf = AFrac * BFrac;
-            expBuf = AExp + BExp;
+            expBuf = AExp + BExp + 4;
             
             if(prodBuf == 0) begin  //product is 0, special case
-                expBuf <= 4'b0100; //set as most negative 3b fraction (leave overflow detector bit 0)
+                expBuf <= 4'b0000; //set exp as 0 for special case
                 NS <= 2;
             end
             else begin
-                if(prodBuf[9:5] > 0) begin
+                if(prodBuf[9:6] > 0) begin //bit 5 is implied 1
                     ov <= 1;    //fraction overflow, signal to shift right
                     NS <= 1;    //stay in same state until fraction no overflow
                 end
@@ -82,9 +85,19 @@ always @(posedge CLK) begin
                 end
             end
         end
-        2: begin
+        2: begin    //normalization
+            if( !prodBuf[6] && prodBuf[5]) begin
+                norm <= 0;
+                NS <= 3;
+            end
+            else begin  //not normalized, left shift
+                norm <= 1;
+                NS <= 2;
+            end
+        end
+        3: begin
             done <= 1;
-            if(expBuf[3] == 1) begin    //overflow detection in exponent
+            if(expBuf+4 > 7) begin    //overflow detection in exponent
                 expOv <= 1;
                 NS <= 0;
             end
@@ -98,10 +111,17 @@ end
     
 always @(posedge CLK) begin
     CS <= NS;
-    if(ov) begin
+    if(ov) begin    //fraction overflow
         prodBuf <= prodBuf >> 1;
         expBuf <= expBuf + 1;
     end
+    if(norm) begin  //normalize fraction
+        prodBuf <= prodBuf << 1;
+        expBuf <= expBuf - 1;
+    end
+    if(done) begin
+        prod = {sign, expBuf[2:0] + 4, prodBuf[4:0]};
+    end  
 end
 
 endmodule
