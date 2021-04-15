@@ -58,6 +58,7 @@ end
 always @(posedge CLK) begin
     case(CS) 
         0: begin
+            done <= 0;
             if(St) begin
                 LoadRegs <= 1;
                 NS <= 1;
@@ -65,6 +66,7 @@ always @(posedge CLK) begin
             else NS <= 0;
         end
         1: begin
+            done <= 0;
             if(AFrac != BFrac) begin //keep shifting until exp equal
                 expNoEq = 1;
                 NS <= 1;
@@ -75,11 +77,13 @@ always @(posedge CLK) begin
             end
         end
         2: begin //now that exp equal add fracs
+            done <= 0;
             sumBuf = AFrac + BFrac; 
             if(sumBuf == 0) begin
                 sumBuf <= 0;
                 expBuf <= 0;
                 done <= 1;
+                NS <= 4;
             end
             else begin
                 if(sumBuf[5]) begin //fraction overflow case
@@ -93,6 +97,7 @@ always @(posedge CLK) begin
             end
         end
         3: begin    //normalize fractions
+            done <= 0;
             if(sumBuf[5]==sumBuf[4]) begin //need normalization
                 needNorm <= 1;
                 NS <= 3;
