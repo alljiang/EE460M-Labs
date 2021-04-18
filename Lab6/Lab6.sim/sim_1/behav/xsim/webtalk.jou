@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 17 10:48:47 2021
+# Process ID: 8736
+# Current directory: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/Lab6.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/Lab6.sim/sim_1/behav/xsim/xsim.dir/TB_Mult_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/Lab6.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/Lab6.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/xchen/Documents/EE460M -notrace
