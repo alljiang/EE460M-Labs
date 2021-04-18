@@ -20,34 +20,12 @@ module MAC(
     
     wire[1:0] opDone;
     
-    Float_Mult mult(clk, startMult, B, C, 0, 0, product, opDone[0]);
-    Float_Add add(clk, startAdd, A, product, opDone[1], 0, 0, sum);
+    Float_Mult mult(B, C, product);
+    Float_Add add(A, product, sum);
     
     always @(posedge clk) begin
-    
-        if(started) begin
-            startMult = 0;
-            if(opDone[0]) begin
-                startAdd = 1;
-            end
-            else if(opDone[1]) begin
-                startAdd = 0;
-                done = 1;
-                started = 0;
-                A = sum;
-            end
-            else begin
-                startAdd = 0;
-            end
-        end
-        else begin
-            if(start) begin
-                startMult = 1;
-                startAdd = 0;
-                done = 0;
-                started = 1;
-            end
-            else done = 1;
+        if(start) begin
+            A = sum;
         end
         
     end
