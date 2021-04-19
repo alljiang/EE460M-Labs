@@ -3,99 +3,99 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="TB_Mult_behav.wdb" id="1">
+      <db_ref path="TB_Add_behav.wdb" id="1">
          <top_modules>
-            <top_module name="TB_Mult" />
+            <top_module name="TB_Add" />
             <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="131401fs"></ZoomEndTime>
-      <Cursor1Time time="20000fs"></Cursor1Time>
+      <ZoomEndTime time="72901fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="195"></NameColumnWidth>
-      <ValueColumnWidth column_width="73"></ValueColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="18" />
-   <wvobject fp_name="/TB_Mult/CLK" type="logic">
-      <obj_property name="ElementShortName">CLK</obj_property>
-      <obj_property name="ObjectShortName">CLK</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Mult/St" type="logic">
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/TB_Add/St" type="logic">
       <obj_property name="ElementShortName">St</obj_property>
       <obj_property name="ObjectShortName">St</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Mult/A" type="array">
+   <wvobject fp_name="/TB_Add/A" type="array">
       <obj_property name="ElementShortName">A[7:0]</obj_property>
       <obj_property name="ObjectShortName">A[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Mult/B" type="array">
+   <wvobject fp_name="/TB_Add/B" type="array">
       <obj_property name="ElementShortName">B[7:0]</obj_property>
       <obj_property name="ObjectShortName">B[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Mult/expOv" type="logic">
-      <obj_property name="ElementShortName">expOv</obj_property>
-      <obj_property name="ObjectShortName">expOv</obj_property>
+   <wvobject fp_name="/TB_Add/Sum" type="array">
+      <obj_property name="ElementShortName">Sum[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Sum[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Mult/prod" type="array">
-      <obj_property name="ElementShortName">prod[7:0]</obj_property>
-      <obj_property name="ObjectShortName">prod[7:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
+   <wvobject fp_name="/TB_Add/A1/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Mult/done" type="logic">
-      <obj_property name="ElementShortName">done</obj_property>
-      <obj_property name="ObjectShortName">done</obj_property>
+   <wvobject fp_name="/TB_Add/A1/St" type="logic">
+      <obj_property name="ElementShortName">St</obj_property>
+      <obj_property name="ObjectShortName">St</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Mult/T1/A" type="array">
+   <wvobject fp_name="/TB_Add/A1/A" type="array">
       <obj_property name="ElementShortName">A[7:0]</obj_property>
       <obj_property name="ObjectShortName">A[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Mult/T1/B" type="array">
+   <wvobject fp_name="/TB_Add/A1/B" type="array">
       <obj_property name="ElementShortName">B[7:0]</obj_property>
       <obj_property name="ObjectShortName">B[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Mult/T1/prod" type="array">
-      <obj_property name="ElementShortName">prod[7:0]</obj_property>
-      <obj_property name="ObjectShortName">prod[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Mult/T1/prodBuf" type="array">
-      <obj_property name="ElementShortName">prodBuf[9:0]</obj_property>
-      <obj_property name="ObjectShortName">prodBuf[9:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Mult/T1/expBuf" type="array">
-      <obj_property name="ElementShortName">expBuf[3:0]</obj_property>
-      <obj_property name="ObjectShortName">expBuf[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Mult/T1/ov" type="logic">
-      <obj_property name="ElementShortName">ov</obj_property>
-      <obj_property name="ObjectShortName">ov</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Mult/T1/sign" type="logic">
-      <obj_property name="ElementShortName">sign</obj_property>
-      <obj_property name="ObjectShortName">sign</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Mult/T1/AFrac" type="array">
-      <obj_property name="ElementShortName">AFrac[4:0]</obj_property>
-      <obj_property name="ObjectShortName">AFrac[4:0]</obj_property>
+   <wvobject fp_name="/TB_Add/A1/Sum" type="array">
+      <obj_property name="ElementShortName">Sum[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Sum[7:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Mult/T1/AExp" type="array">
+   <wvobject fp_name="/TB_Add/A1/sumBuf" type="array">
+      <obj_property name="ElementShortName">sumBuf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sumBuf[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Add/A1/fracBuf" type="array">
+      <obj_property name="ElementShortName">fracBuf[6:0]</obj_property>
+      <obj_property name="ObjectShortName">fracBuf[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Add/A1/expBuf" type="array">
+      <obj_property name="ElementShortName">expBuf[2:0]</obj_property>
+      <obj_property name="ObjectShortName">expBuf[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Add/A1/signBuf" type="logic">
+      <obj_property name="ElementShortName">signBuf</obj_property>
+      <obj_property name="ObjectShortName">signBuf</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Add/A1/AFrac" type="array">
+      <obj_property name="ElementShortName">AFrac[5:0]</obj_property>
+      <obj_property name="ObjectShortName">AFrac[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Add/A1/AExp" type="array">
       <obj_property name="ElementShortName">AExp[2:0]</obj_property>
       <obj_property name="ObjectShortName">AExp[2:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Mult/T1/BFrac" type="array">
-      <obj_property name="ElementShortName">BFrac[4:0]</obj_property>
-      <obj_property name="ObjectShortName">BFrac[4:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Mult/T1/BExp" type="array">
+   <wvobject fp_name="/TB_Add/A1/BFrac" type="array">
+      <obj_property name="ElementShortName">BFrac[5:0]</obj_property>
+      <obj_property name="ObjectShortName">BFrac[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Add/A1/BExp" type="array">
       <obj_property name="ElementShortName">BExp[2:0]</obj_property>
       <obj_property name="ObjectShortName">BExp[2:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
 </wave_config>
