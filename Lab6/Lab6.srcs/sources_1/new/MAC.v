@@ -5,9 +5,9 @@ module MAC(
     input [7:0] B,
     input [7:0] C,
     input start,
-    output reg[7:0] A = 0,
-    output reg[7:0] Bout = 0,
-    output reg[7:0] Cout = 0
+    output reg[7:0] A = 8'b0,
+    output reg[7:0] Bout,
+    output reg[7:0] Cout
     );
     
     reg started = 0;
@@ -22,6 +22,8 @@ module MAC(
     
     always @(posedge clk) begin
         if(start) begin
+            Bout = B;
+            Cout = C;
             A = sum;
         end
         

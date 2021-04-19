@@ -14,7 +14,7 @@ module Matrix(
     reg[7:0] lefttopInput = 0, leftmidInput = 0, leftbottomInput = 0;
     reg start = 0;
     
-    wire[7:0] a_b, a_c, b_b, b_c, c_c, d_b, d_c, e_b, e_c, f_c, g_b, h_b, i_b, i_c;
+    wire[7:0] a_b, a_c, b_b, b_c, c_c, d_b, d_c, e_b, e_c, f_c, g_b, h_b;
     
     reg[3:0] cycleCount = 0;
     
@@ -25,18 +25,18 @@ module Matrix(
     */
     
     MAC topleft(clk, lefttopInput, topleftInput, start, aOut, a_b, a_c);
-    MAC topmid(clk, a_b, topmidInput, start, bOut, a_b, a_c);
-    MAC topright(clk, b_b, toprightInput, start, cOut, a_b, a_c);
-    MAC midleft(clk, leftmidInput, a_c, start, dOut, a_b, a_c);
-    MAC midmid(clk, d_b, b_c, start, eOut, a_b, a_c);
-    MAC midright(clk, e_b, c_c, start, fOut, a_b, a_c);
-    MAC botleft(clk, leftbottomInput, d_c, start, gOut, a_b, a_c);
-    MAC botmid(clk, g_b, e_c, start, hOut, a_b, a_c);
-    MAC botright(clk, i_b, i_c, start, iOut, a_b, a_c);
+    MAC topmid(clk, a_b, topmidInput, start, bOut, b_b, b_c);
+    MAC topright(clk, b_b, toprightInput, start, cOut, , c_c);
+    MAC midleft(clk, leftmidInput, a_c, start, dOut, d_b, d_c);
+    MAC midmid(clk, d_b, b_c, start, eOut, e_b, e_c);
+    MAC midright(clk, e_b, c_c, start, fOut, , f_c);
+    MAC botleft(clk, leftbottomInput, d_c, start, gOut, g_b, );
+    MAC botmid(clk, g_b, e_c, start, hOut, h_b, );
+    MAC botright(clk, h_b, f_c, start, iOut, , );
     
     always @(posedge clk) begin
         if(cycleCount == 8) matrixComplete = 1;
-        else if(!start) start = 1;
+        else if(!start && cycleCount != 0) start = 1;
         else begin
             start = 0;
             //  all MACs are finished, send in new values
@@ -51,10 +51,10 @@ module Matrix(
             end
             else if(cycleCount == 3) begin
                 topleftInput = b20; topmidInput = b11; toprightInput = b02;
-                lefttopInput = b02; leftmidInput = a11; leftbottomInput = a20;
+                lefttopInput = a02; leftmidInput = a11; leftbottomInput = a20;
             end
             else if(cycleCount == 4) begin
-                topleftInput = 0; topmidInput = b22; toprightInput = b12;
+                topleftInput = 0; topmidInput = b21; toprightInput = b12;
                 lefttopInput = 0; leftmidInput = a12; leftbottomInput = a21;
             end
             else if(cycleCount == 5) begin

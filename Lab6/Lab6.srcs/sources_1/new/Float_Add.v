@@ -5,7 +5,7 @@ module Float_Add(
     input St,
     input [7:0] A,
     input [7:0] B,
-    output reg[7:0] Sum
+    output reg[7:0] Sum = 0
     );
 
 reg [5:0] sumBuf; // for signed operation

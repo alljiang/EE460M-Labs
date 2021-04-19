@@ -12,139 +12,76 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="12000fs"></ZoomEndTime>
-      <Cursor1Time time="12000fs"></Cursor1Time>
+      <ZoomEndTime time="10001fs"></ZoomEndTime>
+      <Cursor1Time time="10000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="195"></NameColumnWidth>
-      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+      <NameColumnWidth column_width="191"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="31" />
-   <wvobject fp_name="/TB_Matrix/clk" type="logic">
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/TB_Matrix/mat/topmid/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Matrix/matrixComplete" type="logic">
-      <obj_property name="ElementShortName">matrixComplete</obj_property>
-      <obj_property name="ObjectShortName">matrixComplete</obj_property>
+   <wvobject fp_name="/TB_Matrix/mat/topmid/B" type="array">
+      <obj_property name="ElementShortName">B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Matrix/c00" type="array">
-      <obj_property name="ElementShortName">c00[7:0]</obj_property>
-      <obj_property name="ObjectShortName">c00[7:0]</obj_property>
+   <wvobject fp_name="/TB_Matrix/mat/topmid/C" type="array">
+      <obj_property name="ElementShortName">C[7:0]</obj_property>
+      <obj_property name="ObjectShortName">C[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Matrix/aOut" type="array">
-      <obj_property name="ElementShortName">aOut[7:0]</obj_property>
-      <obj_property name="ObjectShortName">aOut[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/mat/topleft/product" type="array">
-      <obj_property name="ElementShortName">product[7:0]</obj_property>
-      <obj_property name="ObjectShortName">product[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <wvobject fp_name="/TB_Matrix/mat/topmid/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
    </wvobject>
    <wvobject fp_name="/TB_Matrix/mat/topleft/sum" type="array">
       <obj_property name="ElementShortName">sum[7:0]</obj_property>
       <obj_property name="ObjectShortName">sum[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Matrix/mat/topleft/A" type="array">
+   <wvobject fp_name="/TB_Matrix/mat/topmid/A" type="array">
       <obj_property name="ElementShortName">A[7:0]</obj_property>
       <obj_property name="ObjectShortName">A[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Matrix/mat/start" type="logic">
-      <obj_property name="ElementShortName">start</obj_property>
-      <obj_property name="ObjectShortName">start</obj_property>
+   <wvobject fp_name="/TB_Matrix/mat/topmid/Bout" type="array">
+      <obj_property name="ElementShortName">Bout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Bout[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Matrix/mat/cycleCount" type="array">
-      <obj_property name="ElementShortName">cycleCount[3:0]</obj_property>
-      <obj_property name="ObjectShortName">cycleCount[3:0]</obj_property>
+   <wvobject fp_name="/TB_Matrix/mat/topmid/Cout" type="array">
+      <obj_property name="ElementShortName">Cout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cout[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Matrix/mat/topleftInput" type="array">
-      <obj_property name="ElementShortName">topleftInput[7:0]</obj_property>
-      <obj_property name="ObjectShortName">topleftInput[7:0]</obj_property>
+   <wvobject fp_name="/TB_Matrix/mat/topmid/started" type="logic">
+      <obj_property name="ElementShortName">started</obj_property>
+      <obj_property name="ObjectShortName">started</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Matrix/mat/topmid/startMult" type="logic">
+      <obj_property name="ElementShortName">startMult</obj_property>
+      <obj_property name="ObjectShortName">startMult</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Matrix/mat/topmid/startAdd" type="logic">
+      <obj_property name="ElementShortName">startAdd</obj_property>
+      <obj_property name="ObjectShortName">startAdd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Matrix/mat/topmid/product" type="array">
+      <obj_property name="ElementShortName">product[7:0]</obj_property>
+      <obj_property name="ObjectShortName">product[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Matrix/mat/topmid/sum" type="array">
+      <obj_property name="ElementShortName">sum[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/TB_Matrix/mat/topmidInput" type="array">
       <obj_property name="ElementShortName">topmidInput[7:0]</obj_property>
       <obj_property name="ObjectShortName">topmidInput[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/TB_Matrix/mat/toprightInput" type="array">
-      <obj_property name="ElementShortName">toprightInput[7:0]</obj_property>
-      <obj_property name="ObjectShortName">toprightInput[7:0]</obj_property>
+   <wvobject fp_name="/TB_Matrix/mat/topleftInput" type="array">
+      <obj_property name="ElementShortName">topleftInput[7:0]</obj_property>
+      <obj_property name="ObjectShortName">topleftInput[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/TB_Matrix/mat/lefttopInput" type="array">
       <obj_property name="ElementShortName">lefttopInput[7:0]</obj_property>
       <obj_property name="ObjectShortName">lefttopInput[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/mat/leftmidInput" type="array">
-      <obj_property name="ElementShortName">leftmidInput[7:0]</obj_property>
-      <obj_property name="ObjectShortName">leftmidInput[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/mat/leftbottomInput" type="array">
-      <obj_property name="ElementShortName">leftbottomInput[7:0]</obj_property>
-      <obj_property name="ObjectShortName">leftbottomInput[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/c01" type="array">
-      <obj_property name="ElementShortName">c01[7:0]</obj_property>
-      <obj_property name="ObjectShortName">c01[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/bOut" type="array">
-      <obj_property name="ElementShortName">bOut[7:0]</obj_property>
-      <obj_property name="ObjectShortName">bOut[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/c02" type="array">
-      <obj_property name="ElementShortName">c02[7:0]</obj_property>
-      <obj_property name="ObjectShortName">c02[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/cOut" type="array">
-      <obj_property name="ElementShortName">cOut[7:0]</obj_property>
-      <obj_property name="ObjectShortName">cOut[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/c10" type="array">
-      <obj_property name="ElementShortName">c10[7:0]</obj_property>
-      <obj_property name="ObjectShortName">c10[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/dOut" type="array">
-      <obj_property name="ElementShortName">dOut[7:0]</obj_property>
-      <obj_property name="ObjectShortName">dOut[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/c11" type="array">
-      <obj_property name="ElementShortName">c11[7:0]</obj_property>
-      <obj_property name="ObjectShortName">c11[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/eOut" type="array">
-      <obj_property name="ElementShortName">eOut[7:0]</obj_property>
-      <obj_property name="ObjectShortName">eOut[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/c12" type="array">
-      <obj_property name="ElementShortName">c12[7:0]</obj_property>
-      <obj_property name="ObjectShortName">c12[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/fOut" type="array">
-      <obj_property name="ElementShortName">fOut[7:0]</obj_property>
-      <obj_property name="ObjectShortName">fOut[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/c20" type="array">
-      <obj_property name="ElementShortName">c20[7:0]</obj_property>
-      <obj_property name="ObjectShortName">c20[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/gOut" type="array">
-      <obj_property name="ElementShortName">gOut[7:0]</obj_property>
-      <obj_property name="ObjectShortName">gOut[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/c21" type="array">
-      <obj_property name="ElementShortName">c21[7:0]</obj_property>
-      <obj_property name="ObjectShortName">c21[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/hOut" type="array">
-      <obj_property name="ElementShortName">hOut[7:0]</obj_property>
-      <obj_property name="ObjectShortName">hOut[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/c22" type="array">
-      <obj_property name="ElementShortName">c22[7:0]</obj_property>
-      <obj_property name="ObjectShortName">c22[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TB_Matrix/iOut" type="array">
-      <obj_property name="ElementShortName">iOut[7:0]</obj_property>
-      <obj_property name="ObjectShortName">iOut[7:0]</obj_property>
    </wvobject>
 </wave_config>
