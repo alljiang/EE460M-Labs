@@ -3,10 +3,10 @@
 module Matrix(
 
     input clk,
-    input [7:0] a00, a01, a02, a10, a11, a12, a20, a21, a22,
-    input [7:0] b00, b01, b02, b10, b11, b12, b20, b21, b22,
+    input a00, a01, a02, a10, a11, a12, a20, a21, a22,
+    input b00, b01, b02, b10, b11, b12, b20, b21, b22,
     output reg matrixComplete = 0,
-    output [7:0] aOut, bOut, cOut, dOut, eOut, fOut, gOut, hOut, iOut
+    output aOut, bOut, cOut, dOut, eOut, fOut, gOut, hOut, iOut
 
     );
     
@@ -70,6 +70,7 @@ module Matrix(
                 lefttopInput = 0; leftmidInput = 0; leftbottomInput = 0;
             end     
         end
+        else start = 0;
     end
     
 endmodule

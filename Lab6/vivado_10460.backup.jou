@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 18 11:44:09 2021
+# Process ID: 10460
+# Current directory: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3000 C:\Users\xchen\Documents\EE460M HDL Digital Sys\EE460M-Labs\Lab6\Lab6.xpr
+# Log file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/vivado.log
+# Journal file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/Lab6.xpr}
+update_compile_order -fileset sources_1

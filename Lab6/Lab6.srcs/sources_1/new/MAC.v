@@ -17,8 +17,10 @@ module MAC(
     wire[7:0] product;
     wire[7:0] sum;
     
+    wire[1:0] opDone;
+    
     Float_Mult mult(B, C, product);
-    Float_Add add(1'b0, 1'b1, A, product, sum);
+    Float_Add add(A, product, sum);
     
     always @(posedge clk) begin
         if(start) begin

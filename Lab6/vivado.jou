@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 18 21:01:48 2021
+# Process ID: 17024
+# Current directory: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17380 C:\Users\xchen\Documents\EE460M HDL Digital Sys\EE460M-Labs\Lab6\Lab6.xpr
+# Log file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/vivado.log
+# Journal file: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/Lab6.xpr}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {{C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/Lab6.srcs/sim_1/new/TB_Matrix.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_Matrix [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/TB_Mult_behav.wcfg}
+source TB_Matrix.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_Add [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+open_wave_config {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/TB_Mult_behav.wcfg}
+source TB_Add.tcl
+current_wave_config {TB_Mult_behav.wcfg}
+add_wave {{/TB_Add}} 
+restart
+run 100ns
+save_wave_config {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/TB_Mult_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/TB_Mult_behav.wcfg}
+source TB_Add.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/TB_Mult_behav.wcfg}
+source TB_Add.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/TB_Mult_behav.wcfg}
+source TB_Add.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/TB_Mult_behav.wcfg}
+source TB_Add.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/TB_Mult_behav.wcfg}
+source TB_Add.tcl

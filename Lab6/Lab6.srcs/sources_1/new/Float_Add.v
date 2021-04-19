@@ -1,4 +1,24 @@
 `timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 04/14/2021 03:36:17 PM
+// Design Name: 
+// Module Name: Float_Add
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
 
 module Float_Add(
     input rst,
@@ -8,8 +28,8 @@ module Float_Add(
     output reg[7:0] Sum = 0
     );
 
-reg [5:0] sumBuf; // for signed operation
-reg [10:0] fracBuf;
+reg [7:0] sumBuf; // for signed operation
+reg [4:0] fracBuf;
 reg [2:0] expBuf;
 reg signBuf;
 
@@ -36,11 +56,52 @@ always @(*) begin
         AExp = A[6:4];
         BExp = B[6:4];
         
+        //AExp = A[6:4] - 3;
+        //BExp = B[6:4] - 3;
+        
         //A bigger exponent
         if(AExp > BExp)begin
             expBuf = AExp; 
             //shift smaller number, use larger exponent value
             BFrac = BFrac >> (AExp-BExp);
+            
+            //add fractions AND PAY ATTENTION TO SIGNS
+            //check sign
+            if(A[7]==1) AFrac = -AFrac;
+            if(B[7]==1) BFrac = -BFrac;
+            sumBuf = AFrac+BFrac;
+            //sign extend padding
+            sumBuf[5] = sumBuf[4];
+            sumBuf[6] = sumBuf[4];
+            sumBuf[7] = sumBuf[4];
+            //convert back to absolute value
+            if(sumBuf[5]==1) begin
+                sumBuf = -sumBuf;
+                signBuf = 1;
+            end
+            
+            //normalize fractions
+            fracBuf = sumBuf[4:0]; //chop off extra sign bits
+            if(fracBuf[4]==0 && fracBuf[3]==0) begin
+                fracBuf = fracBuf << 1;
+                expBuf = expBuf - 1;
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end    
+            end
         end
         
         //B bigger exponent
@@ -48,84 +109,90 @@ always @(*) begin
             expBuf = BExp; 
             //shift smaller number, use larger exponent value
             AFrac = AFrac >> (BExp-AExp);
+            
+            //add fractions AND PAY ATTENTION TO SIGNS
+            //check sign
+            if(A[7]==1) AFrac = -AFrac;
+            if(B[7]==1) BFrac = -BFrac;
+            sumBuf = AFrac+BFrac;
+            //sign extend padding
+            sumBuf[5] = sumBuf[4];
+            sumBuf[6] = sumBuf[4];
+            sumBuf[7] = sumBuf[4];
+            //convert back to absolute value
+            if(sumBuf[5]==1) begin
+                sumBuf = -sumBuf;
+                signBuf = 1;
+            end
+            
+            //normalize fractions
+            fracBuf = sumBuf[4:0]; //chop off extra sign bits
+            if(fracBuf[4]==0 && fracBuf[3]==0) begin
+                fracBuf = fracBuf << 1;
+                expBuf = expBuf - 1;
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end    
+            end
         end
         
         //Exponents Equal
         else begin
             expBuf = AExp;
-        end
-        
-        if(A[7] == B[7]) signBuf = A[7];
-        else begin
-            if(AFrac > BFrac) begin
-                signBuf = A[7];
-                BFrac = ~BFrac + 1;
-            end                
-            else if(AFrac < BFrac) begin
-                signBuf = B[7];
-                AFrac = ~AFrac + 1;
+            //add fractions AND PAY ATTENTION TO SIGNS
+            //check sign
+            if(A[7]==1) AFrac = -AFrac;
+            if(B[7]==1) BFrac = -BFrac;
+            sumBuf = AFrac + BFrac;
+            //sign extend padding
+            sumBuf[5] = sumBuf[4];
+            sumBuf[6] = sumBuf[4];
+            sumBuf[7] = sumBuf[4];
+            //convert back to absolute value
+            if(sumBuf[5]==1) begin
+                sumBuf = -sumBuf;
+                signBuf = 1;
             end
-            else signBuf = 0;
+           
+            //normalize fractions
+            fracBuf = sumBuf[4:0]; //chop off extra sign bits
+            if(fracBuf[4]==0 && fracBuf[3]==0) begin
+                fracBuf = fracBuf << 1;
+                expBuf = expBuf - 1;
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end
+                if(fracBuf[4]==0 && fracBuf[3]==0)begin
+                    fracBuf = fracBuf << 1;
+                    expBuf = expBuf - 1;
+                end    
+            end
         end
-        
-        sumBuf = AFrac + BFrac;
-        
-        //normalize fractions
-        fracBuf = sumBuf[5:0]; //chop off extra sign bits
-        if(fracBuf >= 6'b100000) begin
-            fracBuf = fracBuf >> 1;
-            expBuf = expBuf + 1;
-        end
-        if(fracBuf >= 6'b100000) begin
-            fracBuf = fracBuf >> 1;
-            expBuf = expBuf + 1;
-        end
-        if(fracBuf >= 6'b100000) begin
-            fracBuf = fracBuf >> 1;
-            expBuf = expBuf + 1;
-        end
-        if(fracBuf >= 6'b100000) begin
-            fracBuf = fracBuf >> 1;
-            expBuf = expBuf + 1;
-        end
-        if(fracBuf >= 6'b100000) begin
-            fracBuf = fracBuf >> 1;
-            expBuf = expBuf + 1;
-        end
-        if(fracBuf >= 6'b100000) begin
-            fracBuf = fracBuf >> 1;
-            expBuf = expBuf + 1;
-        end
-        if(fracBuf >= 6'b100000) begin
-            fracBuf = fracBuf >> 1;
-            expBuf = expBuf + 1;
-        end
-        if(fracBuf < 6'b10000) begin
-            fracBuf = fracBuf << 1;
-            expBuf = expBuf - 1;
-        end
-        if(fracBuf < 6'b10000) begin
-            fracBuf = fracBuf << 1;
-            expBuf = expBuf - 1;
-        end
-        if(fracBuf < 6'b10000) begin
-            fracBuf = fracBuf << 1;
-            expBuf = expBuf - 1;
-        end
-        if(fracBuf < 6'b10000) begin
-            fracBuf = fracBuf << 1;
-            expBuf = expBuf - 1;
-        end
-        if(fracBuf < 6'b10000) begin
-            fracBuf = fracBuf << 1;
-            expBuf = expBuf - 1;
-        end
-        
-        Sum = {signBuf, expBuf, fracBuf[3:0]};
+        Sum = {signBuf, expBuf-3, fracBuf[3:0]};
                 
         if(A == 0 && B==0) Sum = 8'b00000000;
-        else if(A == 0) Sum = B;
-        else if(B == 0) Sum = A;
     end
 end
 
