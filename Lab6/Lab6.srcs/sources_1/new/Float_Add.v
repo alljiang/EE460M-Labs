@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 04/14/2021 03:36:17 PM
-// Design Name: 
-// Module Name: Float_Add
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module Float_Add(
     input rst,
@@ -141,11 +121,11 @@ always @(*) begin
             expBuf = expBuf - 1;
         end
         
-        
-        
         Sum = {signBuf, expBuf, fracBuf[3:0]};
                 
         if(A == 0 && B==0) Sum = 8'b00000000;
+        else if(A == 0) Sum = B;
+        else if(B == 0) Sum = A;
     end
 end
 

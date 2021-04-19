@@ -3,10 +3,10 @@
 module Matrix(
 
     input clk,
-    input a00, a01, a02, a10, a11, a12, a20, a21, a22,
-    input b00, b01, b02, b10, b11, b12, b20, b21, b22,
+    input [7:0] a00, a01, a02, a10, a11, a12, a20, a21, a22,
+    input [7:0] b00, b01, b02, b10, b11, b12, b20, b21, b22,
     output reg matrixComplete = 0,
-    output aOut, bOut, cOut, dOut, eOut, fOut, gOut, hOut, iOut
+    output [7:0] aOut, bOut, cOut, dOut, eOut, fOut, gOut, hOut, iOut
 
     );
     
@@ -14,8 +14,7 @@ module Matrix(
     reg[7:0] lefttopInput = 0, leftmidInput = 0, leftbottomInput = 0;
     reg start = 0;
     
-    wire a_b, a_c, b_b, b_c, c_c, d_b, d_c, e_b, e_c, f_c, g_b, h_b;
-    wire[8:0] done;
+    wire[7:0] a_b, a_c, b_b, b_c, c_c, d_b, d_c, e_b, e_c, f_c, g_b, h_b, i_b, i_c;
     
     reg[3:0] cycleCount = 0;
     
@@ -25,19 +24,21 @@ module Matrix(
         g h i
     */
     
-    MAC topleft(clk, lefttopInput, topleftInput, start, aOut, a_b, a_c, done[0]);
-    MAC topmid(clk, a_b, topmidInput, start, bOut, a_b, a_c, done[1]);
-    MAC topright(clk, b_b, toprightInput, start, cOut, a_b, a_c, done[2]);
-    MAC midleft(clk, leftmidInput, a_c, start, dOut, a_b, a_c, done[3]);
-    MAC midmid(clk, d_b, b_c, start, eOut, a_b, a_c, done[4]);
-    MAC midright(clk, e_b, c_c, start, fOut, a_b, a_c, done[5]);
-    MAC botleft(clk, leftbottomInput, d_c, start, gOut, a_b, a_c, done[6]);
-    MAC botmid(clk, g_b, e_c, start, hOut, a_b, a_c, done[7]);
-    MAC botright(clk, i_b, i_c, start, iOut, a_b, a_c, done[8]);
+    MAC topleft(clk, lefttopInput, topleftInput, start, aOut, a_b, a_c);
+    MAC topmid(clk, a_b, topmidInput, start, bOut, a_b, a_c);
+    MAC topright(clk, b_b, toprightInput, start, cOut, a_b, a_c);
+    MAC midleft(clk, leftmidInput, a_c, start, dOut, a_b, a_c);
+    MAC midmid(clk, d_b, b_c, start, eOut, a_b, a_c);
+    MAC midright(clk, e_b, c_c, start, fOut, a_b, a_c);
+    MAC botleft(clk, leftbottomInput, d_c, start, gOut, a_b, a_c);
+    MAC botmid(clk, g_b, e_c, start, hOut, a_b, a_c);
+    MAC botright(clk, i_b, i_c, start, iOut, a_b, a_c);
     
     always @(posedge clk) begin
         if(cycleCount == 8) matrixComplete = 1;
-        else if(done[8:0] ==  9'b111111111) begin
+        else if(!start) start = 1;
+        else begin
+            start = 0;
             //  all MACs are finished, send in new values
             cycleCount = cycleCount + 1;
             if(cycleCount == 1) begin
@@ -69,7 +70,6 @@ module Matrix(
                 lefttopInput = 0; leftmidInput = 0; leftbottomInput = 0;
             end     
         end
-        else start = 0;
     end
     
 endmodule
