@@ -7,8 +7,7 @@ module MAC(
     input start,
     output reg[7:0] A = 0,
     output reg[7:0] Bout = 0,
-    output reg[7:0] Cout = 0,
-    output reg done = 1
+    output reg[7:0] Cout = 0
     );
     
     reg started = 0;
@@ -18,10 +17,8 @@ module MAC(
     wire[7:0] product;
     wire[7:0] sum;
     
-    wire[1:0] opDone;
-    
     Float_Mult mult(B, C, product);
-    Float_Add add(A, product, sum);
+    Float_Add add(1'b0, 1'b1, A, product, sum);
     
     always @(posedge clk) begin
         if(start) begin
