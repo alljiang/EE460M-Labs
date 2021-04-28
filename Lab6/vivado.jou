@@ -62,3 +62,4 @@ close_sim
 launch_simulation
 open_wave_config {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab6/TB_Mult_behav.wcfg}
 source TB_Add.tcl
+close_sim

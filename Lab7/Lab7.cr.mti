@@ -1,0 +1,38 @@
+{C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Memory
+
+Top level modules:
+	Memory
+
+} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Complete_MIPS.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Complete_MIPS.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Complete_MIPS
+
+Top level modules:
+	Complete_MIPS
+
+} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPS.v} {2 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPS.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module MIPS_Testbench
+** Warning: C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPS.v(42): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	MIPS_Testbench
+
+} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module REG
+
+Top level modules:
+	REG
+
+} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module MIPS
+
+Top level modules:
+	MIPS
+
+} {} {}}

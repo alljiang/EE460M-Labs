@@ -484,3 +484,7 @@ case 6 incorrect
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Add_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
 launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.777 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 18 21:33:56 2021...

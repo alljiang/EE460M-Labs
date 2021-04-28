@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs
+vComplete_MIPS
+Z0 !s110 1619567412
+!i10b 1
+!s100 [nAG;UDi3gifEbCKBUkGz0
+IL<e1aZTePHaPWL9T?Rm]g3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7
+w1619557723
+8C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Complete_MIPS.v
+FC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Complete_MIPS.v
+L0 7
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1619567412.000000
+!s107 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Complete_MIPS.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Complete_MIPS.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@complete_@m@i@p@s
+vMemory
+Z6 !s110 1619567413
+!i10b 1
+!s100 Dm=aI7G^8mMo8m[>ViS=Z1
+IZ8JzHB[fU0^h[BU^j@lK31
+R1
+R2
+w1619561740
+8C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v
+FC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v
+L0 7
+R3
+r1
+!s85 0
+31
+Z7 !s108 1619567413.000000
+!s107 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v|
+!s101 -O0
+!i113 1
+R5
+n@memory
+vMIPS
+R0
+!i10b 1
+!s100 3JE?:HI0imPWBiiBFPB5G1
+IiN6GUJFe61`NbXhH4LZj]1
+R1
+R2
+w1619558735
+8C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v
+FC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v
+L0 13
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v|
+!s101 -O0
+!i113 1
+R5
+n@m@i@p@s
+vMIPS_Testbench
+R6
+!i10b 1
+!s100 8N@OdQa@1SW^EbF4@G4ed3
+IZd2HKfIBALlcR`O_@D;X@2
+R1
+R2
+w1619567402
+8C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPS.v
+FC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPS.v
+L0 2
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPS.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPS.v|
+!s101 -O0
+!i113 1
+R5
+n@m@i@p@s_@testbench
+vREG
+R6
+!i10b 1
+!s100 7ea7bN^9`>[C9N2YWEm8R2
+IohL@]d^?JS;RTfQBDBmT_2
+R1
+R2
+w1619557758
+8C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v
+FC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v
+L0 7
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v|
+!s101 -O0
+!i113 1
+R5
+n@r@e@g
