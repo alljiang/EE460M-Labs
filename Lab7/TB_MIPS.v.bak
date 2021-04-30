@@ -21,7 +21,7 @@ module MIPS_Testbench ();
     CLK = 0;
   end
 
-    assign Address_mem = (init) ? AddressTB : Address;
+    assign Address_mem = (init) ? Address_TB : Address;
     assign WE_mem = (init) ? WE_TB : WE;
     assign CS_mem = (init) ? CS_TB : CS;
 

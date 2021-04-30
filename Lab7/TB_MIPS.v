@@ -51,15 +51,16 @@ module MIPS_Testbench ();
   always
   begin
     RST <= 1'b1; //reset the processor
+    @(posedge CLK)
 	init <= 1; WE_TB <= 1; CS_TB <= 1;
     //Notice that the memory is initialize in the memory module not here
 
-    @(posedge CLK);
-    // driving reset low here puts processor in normal operating mode
-    RST = 1'b0; 
-	
     @(posedge CLK) 
 	init <= 0; WE_TB <= 0; CS_TB <= 0;
+
+    @(posedge CLK);
+    RST = 1'b0; 
+	// driving reset low here puts processor in normal operating mode
 
     for(i=1; i<= N; i = i+1) begin
 	@(posedge WE); //when a word is executed
