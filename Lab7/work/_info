@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs
 vComplete_MIPS
-Z0 !s110 1619753794
+Z0 !s110 1619926684
 !i10b 1
 !s100 [nAG;UDi3gifEbCKBUkGz0
 IL<e1aZTePHaPWL9T?Rm]g3
@@ -23,7 +23,7 @@ Z3 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z4 !s108 1619753794.000000
+Z4 !s108 1619926684.000000
 !s107 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Complete_MIPS.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Complete_MIPS.v|
 !s101 -O0
@@ -33,14 +33,14 @@ n@complete_@m@i@p@s
 vMemory
 R0
 !i10b 1
-!s100 cC;4bg>XYRk:EmmTo3za^2
-I15NPHDPaA_:UJP0[l2]H43
+!s100 ;gRJRgz@87TRcn4XAU]7S3
+IUodG=X@SONOeGI_TkGd^:2
 R1
 R2
-w1619753088
+w1619926554
 8C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v
 FC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v
-L0 45
+L0 7
 R3
 r1
 !s85 0
@@ -55,11 +55,11 @@ n@memory
 vMIPS
 R0
 !i10b 1
-!s100 3JE?:HI0imPWBiiBFPB5G1
-IiN6GUJFe61`NbXhH4LZj]1
+!s100 U6>YO3?8Q;AaS6[SiJA_n3
+IYUESN=zomB>jCl?]9K@hA3
 R1
 R2
-w1619558735
+w1619905386
 8C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v
 FC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v
 L0 13
@@ -96,14 +96,36 @@ R4
 !i113 1
 R5
 n@m@i@p@s_@testbench
+vMIPS_TestbenchA
+R0
+!i10b 1
+!s100 0183SI1n@]]TRi^RDYSG12
+I@z2Vc6:kR2bNf<o`@h8dl0
+R1
+R2
+w1619904938
+8C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPSA.v
+FC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPSA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPSA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPSA.v|
+!s101 -O0
+!i113 1
+R5
+n@m@i@p@s_@testbench@a
 vREG
 R0
 !i10b 1
-!s100 7ea7bN^9`>[C9N2YWEm8R2
-IohL@]d^?JS;RTfQBDBmT_2
+!s100 :TNXNR3[7>@b3lEg2ha<L3
+I^b@:UWNM_T;G1R?h2ca;=0
 R1
 R2
-w1619557758
+w1619905272
 8C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v
 FC:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v
 L0 7

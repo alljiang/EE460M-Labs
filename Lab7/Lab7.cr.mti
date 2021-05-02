@@ -12,6 +12,20 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	Complete_MIPS
 
+} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module REG
+
+Top level modules:
+	REG
+
+} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module MIPS
+
+Top level modules:
+	MIPS
+
 } {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPS.v} {2 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPS.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module MIPS_Testbench
@@ -21,18 +35,11 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	MIPS_Testbench
 
-} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v}
+} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPSA.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPSA.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module MIPS
+-- Compiling module MIPS_TestbenchA
 
 Top level modules:
-	MIPS
-
-} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module REG
-
-Top level modules:
-	REG
+	MIPS_TestbenchA
 
 } {} {}}
