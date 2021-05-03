@@ -20,7 +20,8 @@ module Memory(CS, WE, CLK, ADDR, Mem_Bus);
             RAM[i] = 32'd0;
         
         //$readmemh("TestA_Cases_Book.txt", RAM); 
-	$readmemb("TestA_LoopShift.txt", RAM);
+	//$readmemb("TestA_LoopShift.txt", RAM);
+	$readmemb("TestB_GivenTest.txt", RAM);
         
         for ( i = 0; i < 128; i = i+1 ) 
             $display("%h", RAM[i]);

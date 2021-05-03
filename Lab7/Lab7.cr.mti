@@ -1,9 +1,9 @@
-{C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v}
+{C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPSB.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPSB.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Memory
+-- Compiling module MIPS_TestbenchB
 
 Top level modules:
-	Memory
+	MIPS_TestbenchB
 
 } {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Complete_MIPS.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Complete_MIPS.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -12,19 +12,12 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	Complete_MIPS
 
-} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v}
+} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/Memory.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module REG
+-- Compiling module Memory
 
 Top level modules:
-	REG
-
-} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module MIPS
-
-Top level modules:
-	MIPS
+	Memory
 
 } {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPS.v} {2 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPS.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -34,6 +27,20 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	MIPS_Testbench
+
+} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/lab7.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module MIPS
+
+Top level modules:
+	MIPS
+
+} {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/REG.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module REG
+
+Top level modules:
+	REG
 
 } {} {}} {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPSA.v} {1 {vlog -work work -stats=none {C:/Users/xchen/Documents/EE460M HDL Digital Sys/EE460M-Labs/Lab7/TB_MIPSA.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
