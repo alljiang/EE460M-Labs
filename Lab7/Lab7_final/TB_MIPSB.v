@@ -1,5 +1,4 @@
-// You can use this skeleton testbench code, the textbook testbench code, or your own
-module MIPS_Testbench ();
+module MIPS_TestbenchB();
   reg CLK;
   reg RST;
   wire CS;
@@ -11,15 +10,13 @@ module MIPS_Testbench ();
   wire [7:0] OUT;
   reg TestB;
 
-
   reg init;
   reg WE_TB, CS_TB;
   wire WE_mem, CS_mem;
   reg [6:0] Address_TB;
   wire [6:0] Address_mem;
 
-  parameter N = 10;
-  reg[31:0] expected[N:1];
+  parameter N = 600;
   
   initial
   begin
@@ -30,7 +27,7 @@ module MIPS_Testbench ();
     assign WE_mem = (init) ? WE_TB : WE;
     assign CS_mem = (init) ? CS_TB : CS;
 
-  MIPS CPU(CLK, RST, CS, WE, Address, Mem_Bus, OUT, R1_CTRL, TestB, R2OUT);
+  MIPSB CPU(CLK, RST, CS, WE, Address, Mem_Bus, OUT, R1_CTRL, TestB, R2OUT);
   Memory MEM(CS_mem, WE_mem, CLK, Address_mem, Mem_Bus);
 
   always
@@ -39,17 +36,9 @@ module MIPS_Testbench ();
   end
 
   initial begin
-	expected[1] = 32'h00000006;
-	expected[2] = 32'h00000012;
-	expected[3] = 32'h00000018;
-	expected[4] = 32'h0000000C;
-	expected[5] = 32'h00000002;
-	expected[6] = 32'h000000016;
-	expected[7] = 32'h00000001;
-	expected[8] = 32'h00000120;
-	expected[9] = 32'h00000003;
-	expected[10] = 32'h00412022;
 	CLK = 0;
+	R1_CTRL = 0;
+	TestB = 1;
   end
 
   integer i;
@@ -67,13 +56,12 @@ module MIPS_Testbench ();
     RST = 1'b0; 
 	// driving reset low here puts processor in normal operating mode
 
-    for(i=1; i<= N; i = i+1) begin
-	@(posedge WE); //when a word is executed
-	@(negedge CLK);
-		if(Mem_Bus != expected[i])
-			$display("Bad: actual %d, expected %d", Mem_Bus, expected[i]);
-    end
 
+    for(i=1; i<= N; i = i+1) begin
+	@(posedge CLK)begin
+	   if(i%100 == 0) R1_CTRL = R1_CTRL + 1;
+	end
+    end
     /* add your testing code here */
     // you can add in a 'Halt' signal here as well to test Halt operation
     // you will be verifying your program operation using the
@@ -84,4 +72,5 @@ module MIPS_Testbench ();
   end
 
 endmodule
+
 

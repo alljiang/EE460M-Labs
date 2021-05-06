@@ -1,5 +1,4 @@
-// You can use this skeleton testbench code, the textbook testbench code, or your own
-module MIPS_Testbench ();
+module MIPS_TestbenchA ();
   reg CLK;
   reg RST;
   wire CS;
@@ -39,16 +38,6 @@ module MIPS_Testbench ();
   end
 
   initial begin
-	expected[1] = 32'h00000006;
-	expected[2] = 32'h00000012;
-	expected[3] = 32'h00000018;
-	expected[4] = 32'h0000000C;
-	expected[5] = 32'h00000002;
-	expected[6] = 32'h000000016;
-	expected[7] = 32'h00000001;
-	expected[8] = 32'h00000120;
-	expected[9] = 32'h00000003;
-	expected[10] = 32'h00412022;
 	CLK = 0;
   end
 
@@ -84,4 +73,3 @@ module MIPS_Testbench ();
   end
 
 endmodule
-

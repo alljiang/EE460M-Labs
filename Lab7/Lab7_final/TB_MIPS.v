@@ -6,11 +6,6 @@ module MIPS_Testbench ();
   wire WE;
   wire [31:0] Mem_Bus;
   wire [6:0] Address;
-  reg [2:0] R1_CTRL;
-  wire [31:0] R2OUT;
-  wire [7:0] OUT;
-  reg TestB;
-
 
   reg init;
   reg WE_TB, CS_TB;
@@ -30,7 +25,7 @@ module MIPS_Testbench ();
     assign WE_mem = (init) ? WE_TB : WE;
     assign CS_mem = (init) ? CS_TB : CS;
 
-  MIPS CPU(CLK, RST, CS, WE, Address, Mem_Bus, OUT, R1_CTRL, TestB, R2OUT);
+  MIPS CPU(CLK, RST, CS, WE, Address, Mem_Bus);
   Memory MEM(CS_mem, WE_mem, CLK, Address_mem, Mem_Bus);
 
   always

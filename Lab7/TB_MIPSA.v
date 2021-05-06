@@ -5,7 +5,11 @@ module MIPS_TestbenchA ();
   wire WE;
   wire [31:0] Mem_Bus;
   wire [6:0] Address;
+  reg [2:0] R1_CTRL;
+  wire [31:0] R2OUT;
   wire [7:0] OUT;
+  reg TestB;
+
 
   reg init;
   reg WE_TB, CS_TB;
