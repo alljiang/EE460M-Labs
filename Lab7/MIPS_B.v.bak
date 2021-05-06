@@ -184,8 +184,12 @@ module MIPSB (CLK, RST, CS, WE, ADDR, Mem_Bus, OUT, R1_CTRL, TestB, R2OUT);
 	  else alu_result = alu_in_A + alu_in_B;
 	end 
 	else if (opsave == ssub) begin
-	  if((alu_in_A - alu_in_B) < 0) alu_result = 0;
-	  else alu_result = alu_in_A + alu_in_B;
+	  if((alu_in_A < alu_in_B) begin
+		alu_result = 32'h00000000;
+	  end
+	  else begin 
+		alu_result = alu_in_A - alu_in_B;
+	  end
 	end 
 	
       end
